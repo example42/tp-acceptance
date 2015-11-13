@@ -9,7 +9,7 @@ for app in $(ls -1 modules/tinydata/data | grep -v default.yaml | grep -v test) 
   echo "$(find tests/app/ | grep "/$app$"  | grep "failure/" | wc -l)"
   echo "$(find tests/app/ | grep "/$app$"  | grep "na/" | wc -l)"
   for vm in $vms ; do
-	  echo "$(find tests/app/$vm | grep "/$app$"  | cut -d '/' -f 3)" | sed "s/success/[OK](tests\/app\/$vm\/success\/$app)/g" | sed "s/failure/[failure](tests\/app\/$vm\/failure\/$app)/g"
+	  echo "$(find tests/app/$vm | grep "/$app$"  | cut -d '/' -f 4)" | sed "s/success/[OK](tests\/app\/$vm\/success\/$app)/g" | sed "s/failure/[failure](tests\/app\/$vm\/failure\/$app)/g"
   done
   )
   echo $table_line | sed 's/ /,/g' >> $output
