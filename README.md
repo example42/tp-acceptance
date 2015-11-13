@@ -2,6 +2,8 @@
 
 In this repo are gathered the results of acceptance tests of [Tiny Puppet](http://www.tiny-puppet.com)'s support for applications and profiles.
 
+##### Current [Compatibility Matrix](tests/app_summary.md) for component applications
+
 ## Setup
 
 To install and setup the testing environment (Needed: git, Vagrant, Virtual Box r10k):
