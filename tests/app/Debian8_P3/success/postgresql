@@ -1,0 +1,17 @@
+# Package status
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name                                    Version                  Architecture             Description
++++-=======================================-========================-========================-===================================================================================
+ii  postgresql                              9.4+165                  all                      object-relational SQL database (supported version)
+
+# Service status
+[1;32m●[0m postgresql.service - PostgreSQL RDBMS
+   Loaded: loaded (/lib/systemd/system/postgresql.service; enabled)
+   Active: [1;32mactive (exited)[0m since Fri 2015-11-13 19:54:09 UTC; 8s ago
+ Main PID: 2255 (code=exited, status=0/SUCCESS)
+   CGroup: /system.slice/postgresql.service
+
+Nov 13 19:54:09 debian8-p3 systemd[1]: Started PostgreSQL RDBMS.
+Nov 13 19:54:14 debian8-p3 systemd[1]: Started PostgreSQL RDBMS.

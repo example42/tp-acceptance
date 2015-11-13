@@ -1,0 +1,23 @@
+# Package status
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name                                    Version                  Architecture             Description
++++-=======================================-========================-========================-===================================================================================
+ii  postfix                                 2.11.3-1                 amd64                    High-performance mail transport agent
+
+# Service status
+[1;32m●[0m postfix.service - LSB: Postfix Mail Transport Agent
+   Loaded: loaded (/etc/init.d/postfix)
+  Drop-In: /run/systemd/generator/postfix.service.d
+           └─50-postfix-$mail-transport-agent.conf
+   Active: [1;32mactive (running)[0m since Fri 2015-11-13 19:48:03 UTC; 3s ago
+  Process: 31656 ExecStart=/etc/init.d/postfix start (code=exited, status=0/SUCCESS)
+   CGroup: /system.slice/postfix.service
+           ├─31763 /usr/lib/postfix/master
+           ├─31764 pickup -l -t unix -u -c
+           └─31765 qmgr -l -t unix -u
+
+Nov 13 19:48:03 debian8-p3 postfix[31656]: Starting Postfix Mail Transport Agent: postfix.
+Nov 13 19:48:03 debian8-p3 systemd[1]: Started LSB: Postfix Mail Transport Agent.
+Nov 13 19:48:03 debian8-p3 postfix/master[31763]: daemon started -- version 2.11.3, configuration /etc/postfix

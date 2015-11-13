@@ -1,0 +1,27 @@
+# Package status
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name                                    Version                  Architecture             Description
++++-=======================================-========================-========================-===================================================================================
+ii  openssh-server                          1:6.7p1-5                amd64                    secure shell (SSH) server, for secure access from remote machines
+
+# Service status
+[1;32m●[0m ssh.service - OpenBSD Secure Shell server
+   Loaded: loaded (/lib/systemd/system/ssh.service; enabled)
+   Active: [1;32mactive (running)[0m since Fri 2015-11-13 13:56:24 UTC; 5h 28min ago
+ Main PID: 443 (sshd)
+   CGroup: /system.slice/ssh.service
+           ├─443 /usr/sbin/sshd -D
+           └─765 dhclient -v -pf /run/dhclient.eth0.pid -lf /var/lib/dhcp/dhclient.eth0.leases eth0
+
+Nov 13 19:23:23 debian8-p3 sshd[21785]: Accepted publickey for vagrant from 10.0.2.2 port 64641 ssh2: RSA 86:0d:67:a3:76:4a:49:85:45:00:e1:d6:2e:10:93:db
+Nov 13 19:23:23 debian8-p3 sshd[21785]: pam_unix(sshd:session): session opened for user vagrant by (uid=0)
+Nov 13 19:23:26 debian8-p3 sshd[21805]: Accepted publickey for vagrant from 10.0.2.2 port 64642 ssh2: RSA 86:0d:67:a3:76:4a:49:85:45:00:e1:d6:2e:10:93:db
+Nov 13 19:23:26 debian8-p3 sshd[21805]: pam_unix(sshd:session): session opened for user vagrant by (uid=0)
+Nov 13 19:23:28 debian8-p3 sshd[21819]: Accepted publickey for vagrant from 10.0.2.2 port 64643 ssh2: RSA 86:0d:67:a3:76:4a:49:85:45:00:e1:d6:2e:10:93:db
+Nov 13 19:23:28 debian8-p3 sshd[21819]: pam_unix(sshd:session): session opened for user vagrant by (uid=0)
+Nov 13 19:24:53 debian8-p3 sshd[22375]: Accepted publickey for vagrant from 10.0.2.2 port 64728 ssh2: RSA 86:0d:67:a3:76:4a:49:85:45:00:e1:d6:2e:10:93:db
+Nov 13 19:24:53 debian8-p3 sshd[22375]: pam_unix(sshd:session): session opened for user vagrant by (uid=0)
+Nov 13 19:24:58 debian8-p3 sshd[22541]: Accepted publickey for vagrant from 10.0.2.2 port 64731 ssh2: RSA 86:0d:67:a3:76:4a:49:85:45:00:e1:d6:2e:10:93:db
+Nov 13 19:24:58 debian8-p3 sshd[22541]: pam_unix(sshd:session): session opened for user vagrant by (uid=0)

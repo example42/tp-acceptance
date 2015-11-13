@@ -1,0 +1,5 @@
+# Package status
+package puppetserver is not installed
+
+# Service status
+puppetserver: unrecognized service

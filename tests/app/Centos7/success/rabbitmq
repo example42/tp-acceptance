@@ -1,0 +1,25 @@
+# Package status
+rabbitmq-server-3.3.5-6.el7.noarch
+
+# Service status
+Redirecting to /bin/systemctl status  rabbitmq-server.service
+rabbitmq-server.service - RabbitMQ broker
+   Loaded: loaded (/usr/lib/systemd/system/rabbitmq-server.service; enabled)
+   Active: [1;32mactive (running)[0m since Fri 2015-11-13 20:25:07 UTC; 2s ago
+ Main PID: 929 (beam)
+   CGroup: /system.slice/rabbitmq-server.service
+           ├─929 /usr/lib64/erlang/erts-5.10.4/bin/beam -W w -K true -A30 -P 1048576 -- -root /usr/lib64/erlang -progname erl -- -home /var/lib/rabbitmq -- -pa /usr/lib/rabbitmq/...
+           ├─944 /usr/lib64/erlang/erts-5.10.4/bin/epmd -daemon
+           ├─997 inet_gethost 4
+           └─998 inet_gethost 4
+
+Nov 13 20:25:06 centos7.example42.dev systemd[1]: Starting RabbitMQ broker...
+Nov 13 20:25:06 centos7.example42.dev systemd[1]: [1;39mrabbitmq-server.service: Got notification message from PID 944, but reception only permitted for PID 929[0m
+Nov 13 20:25:06 centos7.example42.dev rabbitmq-server[929]: RabbitMQ 3.3.5. Copyright (C) 2007-2014 GoPivotal, Inc.
+Nov 13 20:25:06 centos7.example42.dev rabbitmq-server[929]: ##  ##      Licensed under the MPL.  See http://www.rabbitmq.com/
+Nov 13 20:25:06 centos7.example42.dev rabbitmq-server[929]: ##  ##
+Nov 13 20:25:06 centos7.example42.dev rabbitmq-server[929]: ##########  Logs: /var/log/rabbitmq/rabbit@centos7.log
+Nov 13 20:25:06 centos7.example42.dev rabbitmq-server[929]: ######  ##        /var/log/rabbitmq/rabbit@centos7-sasl.log
+Nov 13 20:25:06 centos7.example42.dev rabbitmq-server[929]: ##########
+Nov 13 20:25:07 centos7.example42.dev rabbitmq-server[929]: Starting broker... completed with 0 plugins.
+Nov 13 20:25:07 centos7.example42.dev systemd[1]: Started RabbitMQ broker.

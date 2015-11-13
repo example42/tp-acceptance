@@ -1,0 +1,27 @@
+# Package status
+puppetserver-2.1.2-1.el7.noarch
+
+# Service status
+Redirecting to /bin/systemctl status  puppetserver.service
+puppetserver.service - puppetserver Service
+   Loaded: loaded (/usr/lib/systemd/system/puppetserver.service; disabled)
+   Active: [1;31mfailed[0m (Result: exit-code) since Fri 2015-11-13 20:14:57 UTC; 3s ago
+  Process: 31889 ExecStartPost=/bin/bash ${INSTALL_DIR}/ezbake-functions.sh wait_for_app [1;31m(code=exited, status=1/FAILURE)[0m
+  Process: 31888 ExecStart=/usr/bin/java $JAVA_ARGS -XX:OnOutOfMemoryError=kill -9 %%p -Djava.security.egd=/dev/urandom -cp ${INSTALL_DIR}/puppet-server-release.jar clojure.main -m puppetlabs.trapperkeeper.main --config ${CONFIG} -b ${BOOTSTRAP_CONFIG} $@ [1;31m(code=exited, status=1/FAILURE)[0m
+  Process: 31886 ExecStartPre=/usr/bin/install --directory --owner=puppet --group=puppet --mode=775 /var/run/puppetlabs/puppetserver (code=exited, status=0/SUCCESS)
+ Main PID: 31888 (code=exited, status=1/FAILURE)
+
+Nov 13 20:14:57 centos7.example42.dev java[31888]: at clojure.lang.AFn.applyToHelper(AFn.java:165)
+Nov 13 20:14:57 centos7.example42.dev java[31888]: at clojure.lang.Var.applyTo(Var.java:700)
+Nov 13 20:14:57 centos7.example42.dev java[31888]: at clojure.core$apply.invoke(core.clj:624)
+Nov 13 20:14:57 centos7.example42.dev java[31888]: at clojure.main$main_opt.invoke(main.clj:315)
+Nov 13 20:14:57 centos7.example42.dev java[31888]: at clojure.main$main.doInvoke(main.clj:420)
+Nov 13 20:14:57 centos7.example42.dev java[31888]: at clojure.lang.RestFn.invoke(RestFn.java:512)
+Nov 13 20:14:57 centos7.example42.dev java[31888]: at clojure.lang.Var.invoke(Var.java:409)
+Nov 13 20:14:57 centos7.example42.dev java[31888]: at clojure.lang.AFn.applyToHelper(AFn.java:178)
+Nov 13 20:14:57 centos7.example42.dev java[31888]: at clojure.lang.Var.applyTo(Var.java:700)
+Nov 13 20:14:57 centos7.example42.dev java[31888]: at clojure.main.main(main.java:37)
+Nov 13 20:14:57 centos7.example42.dev systemd[1]: [1;39mpuppetserver.service: main process exited, code=exited, status=1/FAILURE[0m
+Nov 13 20:14:57 centos7.example42.dev systemd[1]: [1;39mpuppetserver.service: control process exited, code=exited status=1[0m
+Nov 13 20:14:57 centos7.example42.dev systemd[1]: [1;31mFailed to start puppetserver Service.[0m
+Nov 13 20:14:57 centos7.example42.dev systemd[1]: [1;39mUnit puppetserver.service entered failed state.[0m

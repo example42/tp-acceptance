@@ -1,0 +1,22 @@
+# Package status
+bind-9.9.4-18.el7_1.5.x86_64
+
+# Service status
+Redirecting to /bin/systemctl status  named.service
+named.service - Berkeley Internet Name Domain (DNS)
+   Loaded: loaded (/usr/lib/systemd/system/named.service; enabled)
+   Active: [1;32mactive (running)[0m since Fri 2015-11-13 14:31:38 UTC; 2s ago
+ Main PID: 4802 (named)
+   CGroup: /system.slice/named.service
+           └─4802 /usr/sbin/named -u named
+
+Nov 13 14:31:38 centos7.example42.dev named[4802]: error (network unreachable) resolving 'pdns196.ultradns.info/AAAA/IN': 2001:500:49::1#53
+Nov 13 14:31:38 centos7.example42.dev named[4802]: error (network unreachable) resolving 'pdns196.ultradns.co.uk/A/IN': 2001:7fe::53#53
+Nov 13 14:31:38 centos7.example42.dev named[4802]: error (network unreachable) resolving 'pdns196.ultradns.co.uk/AAAA/IN': 2001:7fe::53#53
+Nov 13 14:31:38 centos7.example42.dev named[4802]: error (network unreachable) resolving 'pdns196.ultradns.biz/A/IN': 2001:7fd::1#53
+Nov 13 14:31:38 centos7.example42.dev named[4802]: error (network unreachable) resolving 'pdns196.ultradns.biz/AAAA/IN': 2001:7fd::1#53
+Nov 13 14:31:38 centos7.example42.dev named[4802]: error (network unreachable) resolving 'pdns196.ultradns.com/AAAA/IN': 2001:7fd::1#53
+Nov 13 14:31:38 centos7.example42.dev named[4802]: error (network unreachable) resolving 'pdns196.ultradns.org/A/IN': 2001:500:c::1#53
+Nov 13 14:31:38 centos7.example42.dev named[4802]: error (network unreachable) resolving 'pdns196.ultradns.co.uk/A/IN': 2001:7fd::1#53
+Nov 13 14:31:38 centos7.example42.dev named[4802]: error (network unreachable) resolving 'pdns196.ultradns.co.uk/AAAA/IN': 2001:7fd::1#53
+Nov 13 14:31:38 centos7.example42.dev named[4802]: error (network unreachable) resolving 'pdns196.ultradns.org/AAAA/IN': 2001:500:c::1#53

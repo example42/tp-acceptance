@@ -1,0 +1,10 @@
+# Package status
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name                                    Version                  Architecture             Description
++++-=======================================-========================-========================-===================================================================================
+ii  puppet                                  2.7.23-1~deb7u3          all                      Centralized configuration management - agent startup and compatibility scripts
+
+# Service status
+[....] agent is not running ...[?25l7[1G[[31mFAIL[39;49m8[?12l[?25h [31mfailed![39;49m

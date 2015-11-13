@@ -1,0 +1,5 @@
+# Package status
+package openntpd is not installed
+
+# Service status
+openntpd: unrecognized service

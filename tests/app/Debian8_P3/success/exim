@@ -1,0 +1,17 @@
+# Package status
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name                                    Version                  Architecture             Description
++++-=======================================-========================-========================-===================================================================================
+ii  exim4                                   4.84-8                   all                      metapackage to ease Exim MTA (v4) installation
+
+# Service status
+[1;32m●[0m exim4.service - LSB: exim Mail Transport Agent
+   Loaded: loaded (/etc/init.d/exim4)
+   Active: [1;32mactive (running)[0m since Fri 2015-11-13 16:20:23 UTC; 2s ago
+   CGroup: /system.slice/exim4.service
+           └─31433 /usr/sbin/exim4 -bd -q30m
+
+Nov 13 16:20:23 debian8-p3 exim4[31183]: Starting MTA: exim4.
+Nov 13 16:20:23 debian8-p3 systemd[1]: Started LSB: exim Mail Transport Agent.

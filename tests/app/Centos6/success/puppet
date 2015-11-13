@@ -1,0 +1,5 @@
+# Package status
+package puppet is not installed
+
+# Service status
+puppet (pid  17083) is running...

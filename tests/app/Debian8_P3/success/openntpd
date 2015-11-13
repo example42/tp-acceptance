@@ -1,0 +1,20 @@
+# Package status
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name                                    Version                  Architecture             Description
++++-=======================================-========================-========================-===================================================================================
+ii  openntpd                                20080406p-10             amd64                    OpenBSD NTP daemon
+
+# Service status
+[1;32m●[0m openntpd.service - OpenNTPd Network Time Protocol
+   Loaded: loaded (/lib/systemd/system/openntpd.service; enabled)
+   Active: [1;32mactive (running)[0m since Fri 2015-11-13 19:23:20 UTC; 2s ago
+  Process: 21748 ExecStart=/usr/sbin/ntpd $DAEMON_OPTS (code=exited, status=0/SUCCESS)
+ Main PID: 21749 (ntpd)
+   CGroup: /system.slice/openntpd.service
+           ├─21749 /usr/sbin/ntpd -f /etc/openntpd/ntpd.conf
+           └─21750 /usr/sbin/ntpd -f /etc/openntpd/ntpd.conf
+
+Nov 13 19:23:20 debian8-p3 systemd[1]: Started OpenNTPd Network Time Protocol.
+Nov 13 19:23:20 debian8-p3 ntpd[21750]: ntp engine ready

@@ -1,0 +1,21 @@
+# Package status
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name                                    Version                  Architecture             Description
++++-=======================================-========================-========================-===================================================================================
+ii  puppet-agent                            1.2.7-1jessie            amd64                    The Puppet Agent package contains all of the elements needed to run puppet, includi
+
+# Service status
+● puppet.service - Puppet agent
+   Loaded: loaded (/lib/systemd/system/puppet.service; enabled)
+   Active: inactive (dead)
+
+Nov 13 13:56:24 kameleon-debian systemd[1]: Starting (null)...
+Nov 13 13:56:24 kameleon-debian puppet[451]: Starting puppet agent
+Nov 13 13:56:24 kameleon-debian puppet[451]: puppet not configured to start, please edit /etc/default/puppet to enable
+Nov 13 13:56:24 kameleon-debian puppet[451]: .
+Nov 13 13:56:24 kameleon-debian systemd[1]: Started (null).
+Nov 13 20:06:53 debian8-p3 systemd[1]: Stopping (null)...
+Nov 13 20:06:53 debian8-p3 puppet[5497]: Stopping puppet agent.
+Nov 13 20:06:53 debian8-p3 systemd[1]: Stopped (null).

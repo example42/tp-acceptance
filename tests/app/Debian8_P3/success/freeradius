@@ -1,0 +1,18 @@
+# Package status
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name                                    Version                  Architecture             Description
++++-=======================================-========================-========================-===================================================================================
+ii  freeradius                              2.2.5+dfsg-0.2           amd64                    high-performance and highly configurable RADIUS server
+
+# Service status
+[1;32m●[0m freeradius.service - LSB: Radius Daemon
+   Loaded: loaded (/etc/init.d/freeradius)
+   Active: [1;32mactive (running)[0m since Fri 2015-11-13 16:25:40 UTC; 2s ago
+   CGroup: /system.slice/freeradius.service
+           └─2909 /usr/sbin/freeradius
+
+Nov 13 16:25:40 debian8-p3 systemd[1]: Starting LSB: Radius Daemon...
+Nov 13 16:25:40 debian8-p3 freeradius[2904]: Starting FreeRADIUS daemon: freeradius.
+Nov 13 16:25:40 debian8-p3 systemd[1]: Started LSB: Radius Daemon.

@@ -1,0 +1,16 @@
+# Package status
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name                                    Version                  Architecture             Description
++++-=======================================-========================-========================-===================================================================================
+ii  openvpn                                 2.3.4-5                  amd64                    virtual private network daemon
+
+# Service status
+[1;32m●[0m openvpn.service - OpenVPN service
+   Loaded: loaded (/lib/systemd/system/openvpn.service; enabled)
+   Active: [1;32mactive (exited)[0m since Fri 2015-11-13 19:26:59 UTC; 2s ago
+  Process: 23566 ExecStart=/bin/true (code=exited, status=0/SUCCESS)
+ Main PID: 23566 (code=exited, status=0/SUCCESS)
+
+Nov 13 19:26:59 debian8-p3 systemd[1]: Started OpenVPN service.

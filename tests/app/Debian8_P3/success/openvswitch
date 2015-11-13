@@ -1,0 +1,29 @@
+# Package status
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name                                    Version                  Architecture             Description
++++-=======================================-========================-========================-===================================================================================
+ii  openvswitch-switch                      2.3.0+git20140819-3      amd64                    Open vSwitch switch implementations
+
+# Service status
+[1;32m●[0m openvswitch-switch.service - LSB: Open vSwitch switch
+   Loaded: loaded (/etc/init.d/openvswitch-switch)
+   Active: [1;32mactive (running)[0m since Fri 2015-11-13 19:30:57 UTC; 2s ago
+   CGroup: /system.slice/openvswitch-switch.service
+           ├─24990 ovsdb-server: monitoring pid 24991 (healthy)
+           ├─24991 ovsdb-server /etc/openvswitch/conf.db -vconsole:emer -vsyslog:err -vfile:info --remote=punix:/var/run/openvswitch/db.sock --private-key=db:Open_vSwitch,SSL,pri...
+           ├─25000 ovs-vswitchd: monitoring pid 25001 (healthy)
+           └─25001 ovs-vswitchd unix:/var/run/openvswitch/db.sock -vconsole:emer -vsyslog:err -vfile:info --mlockall --no-chdir --log-file=/var/log/openvswitch/ovs-vswitchd.log -...
+
+Nov 13 19:30:56 debian8-p3 openvswitch-switch[24939]: Inserting openvswitch module.
+Nov 13 19:30:57 debian8-p3 openvswitch-switch[24939]: /etc/openvswitch/conf.db does not exist ... (warning).
+Nov 13 19:30:57 debian8-p3 openvswitch-switch[24939]: Creating empty database /etc/openvswitch/conf.db.
+Nov 13 19:30:57 debian8-p3 openvswitch-switch[24939]: Starting ovsdb-server.
+Nov 13 19:30:57 debian8-p3 ovs-vsctl[24992]: [1;39movs|00001|vsctl|INFO|Called as ovs-vsctl --no-wait -- init -- set Open_vSwitch . db-version=7.6.0[0m
+Nov 13 19:30:57 debian8-p3 ovs-vsctl[24997]: [1;39movs|00001|vsctl|INFO|Called as ovs-vsctl --no-wait set Open_vSwitch . ovs-version=2.3.0 "external-ids:system-id=\"519cd9fd...1-jessie\""[0m
+Nov 13 19:30:57 debian8-p3 openvswitch-switch[24939]: Configuring Open vSwitch system IDs.
+Nov 13 19:30:57 debian8-p3 openvswitch-switch[24939]: Starting ovs-vswitchd.
+Nov 13 19:30:57 debian8-p3 openvswitch-switch[24939]: Enabling remote OVSDB managers.
+Nov 13 19:30:57 debian8-p3 systemd[1]: Started LSB: Open vSwitch switch.
+Hint: Some lines were ellipsized, use -l to show in full.

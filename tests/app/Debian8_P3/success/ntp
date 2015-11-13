@@ -1,0 +1,25 @@
+# Package status
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name                                    Version                  Architecture             Description
++++-=======================================-========================-========================-===================================================================================
+ii  ntp                                     1:4.2.6.p5+dfsg-7+deb8u1 amd64                    Network Time Protocol daemon and utility programs
+
+# Service status
+[1;32m●[0m ntp.service - LSB: Start NTP daemon
+   Loaded: loaded (/etc/init.d/ntp)
+   Active: [1;32mactive (running)[0m since Fri 2015-11-13 19:21:09 UTC; 2s ago
+   CGroup: /system.slice/ntp.service
+           └─20378 /usr/sbin/ntpd -p /var/run/ntpd.pid -g -u 132:140
+
+Nov 13 19:21:09 debian8-p3 ntp[20371]: Starting NTP server: ntpd.
+Nov 13 19:21:09 debian8-p3 ntpd[20378]: [1;39mproto: precision = 0.104 usec[0m
+Nov 13 19:21:09 debian8-p3 ntpd[20378]: Listen and drop on 0 v4wildcard 0.0.0.0 UDP 123
+Nov 13 19:21:09 debian8-p3 ntpd[20378]: Listen and drop on 1 v6wildcard :: UDP 123
+Nov 13 19:21:09 debian8-p3 ntpd[20378]: Listen normally on 2 lo 127.0.0.1 UDP 123
+Nov 13 19:21:09 debian8-p3 ntpd[20378]: Listen normally on 3 eth0 10.0.2.15 UDP 123
+Nov 13 19:21:09 debian8-p3 ntpd[20378]: Listen normally on 4 lo ::1 UDP 123
+Nov 13 19:21:09 debian8-p3 ntpd[20378]: Listen normally on 5 eth0 fe80::a00:27ff:fe43:c275 UDP 123
+Nov 13 19:21:09 debian8-p3 ntpd[20378]: peers refreshed
+Nov 13 19:21:09 debian8-p3 ntpd[20378]: Listening on routing socket on fd #22 for interface updates

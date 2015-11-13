@@ -1,0 +1,22 @@
+# Package status
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name                                    Version                  Architecture             Description
++++-=======================================-========================-========================-===================================================================================
+ii  haproxy                                 1.5.8-3+deb8u2           amd64                    fast and reliable load balancing reverse proxy
+
+# Service status
+[1;32m●[0m haproxy.service - HAProxy Load Balancer
+   Loaded: loaded (/lib/systemd/system/haproxy.service; enabled)
+   Active: [1;32mactive (running)[0m since Fri 2015-11-13 16:33:28 UTC; 2s ago
+     Docs: man:haproxy(1)
+           file:/usr/share/doc/haproxy/configuration.txt.gz
+ Main PID: 27057 (haproxy-systemd)
+   CGroup: /system.slice/haproxy.service
+           ├─27057 /usr/sbin/haproxy-systemd-wrapper -f /etc/haproxy/haproxy.cfg -p /run/haproxy.pid
+           ├─27059 /usr/sbin/haproxy -f /etc/haproxy/haproxy.cfg -p /run/haproxy.pid -Ds
+           └─27062 /usr/sbin/haproxy -f /etc/haproxy/haproxy.cfg -p /run/haproxy.pid -Ds
+
+Nov 13 16:33:28 debian8-p3 systemd[1]: Started HAProxy Load Balancer.
+Nov 13 16:33:28 debian8-p3 haproxy-systemd-wrapper[27057]: haproxy-systemd-wrapper: executing /usr/sbin/haproxy -f /etc/haproxy/haproxy.cfg -p /run/haproxy.pid -Ds

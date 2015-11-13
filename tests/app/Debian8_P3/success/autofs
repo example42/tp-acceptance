@@ -1,0 +1,18 @@
+# Package status
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name                                    Version                  Architecture             Description
++++-=======================================-========================-========================-===================================================================================
+ii  autofs                                  5.0.8-2                  amd64                    kernel-based automounter for Linux
+
+# Service status
+[1;32m●[0m autofs.service - LSB: Automounts filesystems on demand
+   Loaded: loaded (/etc/init.d/autofs)
+   Active: [1;32mactive (running)[0m since Fri 2015-11-13 14:25:42 UTC; 3s ago
+   CGroup: /system.slice/autofs.service
+           └─13694 /usr/sbin/automount --pid-file /var/run/autofs.pid
+
+Nov 13 14:25:42 debian8-p3 systemd[1]: Starting LSB: Automounts filesystems on demand...
+Nov 13 14:25:42 debian8-p3 autofs[13689]: Starting automount....
+Nov 13 14:25:42 debian8-p3 systemd[1]: Started LSB: Automounts filesystems on demand.

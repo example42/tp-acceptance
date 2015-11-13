@@ -1,0 +1,5 @@
+# Package status
+package puppetdb is not installed
+
+# Service status
+puppetdb: unrecognized service

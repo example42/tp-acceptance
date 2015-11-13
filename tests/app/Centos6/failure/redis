@@ -1,0 +1,5 @@
+# Package status
+package redis is not installed
+
+# Service status
+redis: unrecognized service

@@ -1,0 +1,22 @@
+# Package status
+openssh-server-6.4p1-8.el7.x86_64
+
+# Service status
+Redirecting to /bin/systemctl status  sshd.service
+sshd.service - OpenSSH server daemon
+   Loaded: loaded (/usr/lib/systemd/system/sshd.service; enabled)
+   Active: [1;32mactive (running)[0m since Fri 2015-11-13 13:50:28 UTC; 5h 33min ago
+ Main PID: 1130 (sshd)
+   CGroup: /system.slice/sshd.service
+           └─1130 /usr/sbin/sshd -D
+
+Nov 13 19:22:07 centos7.example42.dev sshd[26958]: [1;31merror: Could not load host key: /etc/ssh/ssh_host_dsa_key[0m
+Nov 13 19:22:07 centos7.example42.dev sshd[26958]: Accepted publickey for vagrant from 10.0.2.2 port 64459 ssh2: RSA 8f:9b:67:c3:8a:1c:ef:1e:e5:81:45:02:6a:1a:a1:fd
+Nov 13 19:22:09 centos7.example42.dev sshd[26991]: [1;31merror: Could not load host key: /etc/ssh/ssh_host_dsa_key[0m
+Nov 13 19:22:09 centos7.example42.dev sshd[26991]: Accepted publickey for vagrant from 10.0.2.2 port 64461 ssh2: RSA 8f:9b:67:c3:8a:1c:ef:1e:e5:81:45:02:6a:1a:a1:fd
+Nov 13 19:22:12 centos7.example42.dev sshd[27018]: [1;31merror: Could not load host key: /etc/ssh/ssh_host_dsa_key[0m
+Nov 13 19:22:12 centos7.example42.dev sshd[27018]: Accepted publickey for vagrant from 10.0.2.2 port 64483 ssh2: RSA 8f:9b:67:c3:8a:1c:ef:1e:e5:81:45:02:6a:1a:a1:fd
+Nov 13 19:24:17 centos7.example42.dev sshd[27148]: [1;31merror: Could not load host key: /etc/ssh/ssh_host_dsa_key[0m
+Nov 13 19:24:17 centos7.example42.dev sshd[27148]: Accepted publickey for vagrant from 10.0.2.2 port 64685 ssh2: RSA 8f:9b:67:c3:8a:1c:ef:1e:e5:81:45:02:6a:1a:a1:fd
+Nov 13 19:24:23 centos7.example42.dev sshd[27272]: [1;31merror: Could not load host key: /etc/ssh/ssh_host_dsa_key[0m
+Nov 13 19:24:23 centos7.example42.dev sshd[27272]: Accepted publickey for vagrant from 10.0.2.2 port 64703 ssh2: RSA 8f:9b:67:c3:8a:1c:ef:1e:e5:81:45:02:6a:1a:a1:fd

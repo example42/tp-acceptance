@@ -1,0 +1,14 @@
+# Package status
+puppetdb-3.2.0-1.el7.noarch
+
+# Service status
+Redirecting to /bin/systemctl status  puppetdb.service
+puppetdb.service - puppetdb Service
+   Loaded: loaded (/usr/lib/systemd/system/puppetdb.service; enabled)
+   Active: [1;32mactive (running)[0m since Fri 2015-11-13 20:09:02 UTC; 3s ago
+ Main PID: 31350 (java)
+   CGroup: /system.slice/puppetdb.service
+           └─31350 /usr/bin/java -Xmx192m -XX:OnOutOfMemoryError=kill -9 %p -Djava.security.egd=/dev/urandom -cp /opt/puppetlabs/server/apps/puppetdb/puppetdb.jar clojure.main -m...
+
+Nov 13 20:08:20 centos7.example42.dev systemd[1]: Starting puppetdb Service...
+Nov 13 20:09:02 centos7.example42.dev systemd[1]: Started puppetdb Service.

@@ -1,0 +1,5 @@
+# Package status
+package openstack-quantum is not installed
+
+# Service status
+openstack-quantum-server: unrecognized service

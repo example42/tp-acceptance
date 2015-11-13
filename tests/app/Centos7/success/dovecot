@@ -1,0 +1,17 @@
+# Package status
+dovecot-2.2.10-4.el7_0.1.x86_64
+
+# Service status
+Redirecting to /bin/systemctl status  dovecot.service
+dovecot.service - Dovecot IMAP/POP3 email server
+   Loaded: loaded (/usr/lib/systemd/system/dovecot.service; enabled)
+   Active: [1;32mactive (running)[0m since Fri 2015-11-13 15:10:24 UTC; 2s ago
+ Main PID: 17680 (dovecot)
+   CGroup: /system.slice/dovecot.service
+           ├─17680 /usr/sbin/dovecot -F
+           ├─17686 dovecot/anvil
+           ├─17687 dovecot/log
+           └─17691 dovecot/config
+
+Nov 13 15:10:24 centos7.example42.dev systemd[1]: Started Dovecot IMAP/POP3 email server.
+Nov 13 15:10:24 centos7.example42.dev dovecot[17680]: master: Dovecot v2.2.10 starting up for imap, pop3, lmtp (core dumps disabled)

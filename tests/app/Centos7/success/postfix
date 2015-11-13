@@ -1,0 +1,20 @@
+# Package status
+postfix-2.10.1-6.el7.x86_64
+
+# Service status
+Redirecting to /bin/systemctl status  postfix.service
+postfix.service - Postfix Mail Transport Agent
+   Loaded: loaded (/usr/lib/systemd/system/postfix.service; enabled)
+   Active: [1;32mactive (running)[0m since Fri 2015-11-13 19:46:04 UTC; 2s ago
+  Process: 29427 ExecStart=/usr/sbin/postfix start (code=exited, status=0/SUCCESS)
+  Process: 29425 ExecStartPre=/usr/libexec/postfix/chroot-update (code=exited, status=0/SUCCESS)
+  Process: 29423 ExecStartPre=/usr/libexec/postfix/aliasesdb (code=exited, status=0/SUCCESS)
+ Main PID: 29499 (master)
+   CGroup: /system.slice/postfix.service
+           ├─29499 /usr/libexec/postfix/master -w
+           ├─29500 pickup -l -t unix -u
+           └─29501 qmgr -l -t unix -u
+
+Nov 13 19:46:04 centos7.example42.dev systemd[1]: Starting Postfix Mail Transport Agent...
+Nov 13 19:46:04 centos7.example42.dev postfix/master[29499]: daemon started -- version 2.10.1, configuration /etc/postfix
+Nov 13 19:46:04 centos7.example42.dev systemd[1]: Started Postfix Mail Transport Agent.
