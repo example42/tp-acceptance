@@ -1,0 +1,17 @@
+/.idea
+/.gradle
+/.rvmrc
+build
+pkg/
+coverage/
+Session.vim
+spec/fixtures
+.*.sw[a-z]
+Gemfile.lock
+*.un~
+/.vagrant
+/modules
+/vagrant/modules
+.coveralls.yml
+.bundle/
+vendor/
