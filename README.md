@@ -64,15 +64,13 @@ and then execute commands like these:
 Do not expect everything to work seamlessly, this is a test environment to verify functionality and coverage on different Operating Systems. 
 
 
-### [Compatibility matrix](acceptance.md)
+### Application tests 
 
-Routinely the results of acceptance tests are saved in the [```acceptance```](https://github.com/example42/tp-playground/tree/master/acceptance)  directory: use it as a reference on the current support matrix of different applications on different Operating Systems.
+Routinely the results of acceptance tests are generated and [saved](tests/app_summary.md). This is a rough reference on the current support matrix of different applications on different Operating Systems.
 
-A sumup of the tests is in the [```Compatibility Matrix```]acceptance.md) which is updated regularly.
+For a summary, check the [Compatibility Matrix](tests/app_summary.md) of tp support for component applications, updated regularly.
 
 Note however that Tiny Puppet support may extend to other OS: the acceptance tests use directly ```puppet apply``` on ```tp``` defines, so they need to run locally and have the expected prerequisites (such as the Ruby version).
 
 Note also that some tests fail for trivial reasons such as the absence of a valid configuration file by default or missing data to configure dedicated repositories or execution order issues while running tests on the same VM or errors in the test scripts.
-
-Check the output of the check scripts, under the ```success``` and ```failure``` directories for some details on the reasons some tests are failing.
 
