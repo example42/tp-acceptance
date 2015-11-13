@@ -10,5 +10,5 @@ for vm in $vm_list ; do
   vagrant up $vm
 done
 
-bin/test.sh $app all acceptance
+bin/test_app.sh $app all acceptance
 

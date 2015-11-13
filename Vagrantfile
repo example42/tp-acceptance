@@ -11,44 +11,10 @@ Vagrant.configure("2") do |config|
   # config.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash'"
 
   {
-    :Centos7_PuppetServer => {
-      :box              => 'puppetlabs/centos-7.0-64-puppet',
-      :provision_puppet => false,
-      :provision_shell  => true,
-      :breed            => 'puppetlabs',
-      :ram              => '4096',
-      :cpu              => '2',
-      :facts            => {
-        :role => 'puppet',
-      }
-    },
-    :Ubuntu1404_PuppetServer => {
-      :box              => 'puppetlabs/ubuntu-14.04-64-puppet',
-      :provision_puppet => false,
-      :provision_shell  => true,
-      :breed            => 'puppetlabs-apt',
-      :ram              => '4096',
-      :cpu              => '2',
-      :facts            => {
-        :role => 'puppet',
-      }
-    },
     :Centos7 => {
       :box              => 'puppetlabs/centos-7.0-64-puppet',
       :breed            => 'puppetlabs',
       :provision_puppet => false,
-      :provision_shell  => true,
-    },
-    :Centos7_P3 => {
-      :box              => 'webhippie/centos-7',
-      :breed            => 'redhat7',
-      :provision_puppet => false,
-      :provision_shell  => true,
-    },
-    :Centos7_PE => {
-      :box              => 'puppetlabs/centos-7.0-64-puppet-enterprise',
-      :breed            => 'puppetlabs',
-      :provision_puppet => true,
       :provision_shell  => true,
     },
     :Centos6 => {
@@ -84,13 +50,6 @@ Vagrant.configure("2") do |config|
     :Debian6 => {
       :box              => 'puppetlabs/debian-6.0.10-64-puppet',
       :breed            => 'puppetlabs-apt',
-      :provision_puppet => false,
-      :provision_shell  => true,
-    },
-    :OpenSuse12_3 => {
-      :box              => 'opensuse-12.3-64',
-      :box_url          => 'http://sourceforge.net/projects/opensusevagrant/files/12.3/opensuse-12.3-64.box/download',
-      :breed            => 'opensuse12',
       :provision_puppet => false,
       :provision_shell  => true,
     },

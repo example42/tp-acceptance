@@ -74,9 +74,9 @@ default_check() {
 }
 acceptance_check () {
   echo_title "Running acceptance test for $1 on $2"
-  rm -f acceptance/$2/success/$1
-  rm -f acceptance/$2/failure/$1
-  rm -f acceptance/$2/na/$1
+  rm -f tests/app/$2/success/$1
+  rm -f tests/app/$2/failure/$1
+  rm -f tests/app/$2/na/$1
   vagrant ssh $2 -c "sudo /etc/tp/test/$1" > /tmp/tp_test_$1_$2
   res=$?
   if [ "x$res" == "x0" ]; then
@@ -86,10 +86,10 @@ acceptance_check () {
   else
     result='failure'
   fi
-  mkdir -p acceptance/$2/$result
-  mv /tmp/tp_test_$1_$2 acceptance/$2/$result/$1
-  cat acceptance/$2/$result/$1
-  echo_$result "## ${result}! ## Output written to acceptance/$2/${result}/$1"
+  mkdir -p tests/app/$2/$result
+  mv /tmp/tp_test_$1_$2 tests/app/$2/$result/$1
+  cat tests/app/$2/$result/$1
+  echo_$result "## ${result}! ## Output written to tests/app/$2/${result}/$1"
 
   uninstall $1 $2
 }

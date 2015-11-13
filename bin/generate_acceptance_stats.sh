@@ -1,13 +1,13 @@
 #!/bin/bash
 # Requires: pip3 install csvtomd
 
-output=acceptance.md
-vms=$(ls -1 acceptance/)
+output=tests/app_summary.md
+vms=$(ls -1 tests/app/)
 bin/acceptance_to_csv.sh
 
-echo "# Tiny Puppet acceptance test results" > $output
+echo "# Tiny Puppet - APP acceptance tests compatibility matrix" > $output
 echo "### Generated: $(date)" >> $output
-csvtomd acceptance.csv >> $output
+csvtomd tests/app_matrix.csv >> $output
 
 
 
