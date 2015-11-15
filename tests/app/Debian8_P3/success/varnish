@@ -1,0 +1,27 @@
+# Package status
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name                                         Version                     Architecture                Description
++++-============================================-===========================-===========================-==============================================================================================
+ii  varnish                                      4.0.2-1                     amd64                       state of the art, high-performance web accelerator
+
+# Service status
+[1;32m●[0m varnish.service - Varnish HTTP accelerator
+   Loaded: loaded (/lib/systemd/system/varnish.service; enabled)
+   Active: [1;32mactive (running)[0m since Sun 2015-11-15 17:33:40 UTC; 4s ago
+ Main PID: 26859 (varnishd)
+   CGroup: /system.slice/varnish.service
+           ├─26859 /usr/sbin/varnishd -a :6081 -T localhost:6082 -f /etc/varnish/default.vcl -S /etc/varnish/secret -s malloc,256m
+           └─26862 /usr/sbin/varnishd -a :6081 -T localhost:6082 -f /etc/varnish/default.vcl -S /etc/varnish/secret -s malloc,256m
+
+Nov 15 17:33:39 debian8-p3 varnishd[26837]: VRT_strcmp(VRT_r_req_method(ctx), "OPTIONS")&&
+Nov 15 17:33:39 debian8-p3 varnishd[26837]: VRT_strcmp(VRT_r_req_method(ctx), "DELETE"))
+Nov 15 17:33:39 debian8-p3 varnishd[26837]: )
+Nov 15 17:33:39 debian8-p3 varnishd[26837]: {
+Nov 15 17:33:39 debian8-p3 varnishd[26837]: VRT_count(ctx, 7);
+Nov 15 17:33:39 debian8-p3 varnishd[26837]: VRT_handling(ctx, VCL_RET_PIPE);
+Nov 15 17:33:39 debian8-p3 varnishd[26837]: return (1);
+Nov 15 17:33:39 debian8-p3 varnishd[26837]: }
+Nov 15 17:33:39 debian8-p3 varnishd[26837]: VRT_count(ctx, 8);
+Nov 15 17:33:40 debian8-p3 systemd[1]: Started Varnish HTTP accelerator.

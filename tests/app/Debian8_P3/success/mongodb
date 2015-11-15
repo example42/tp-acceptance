@@ -9,11 +9,11 @@ ii  mongodb-server                               1:2.4.10-5                  amd
 # Service status
 [1;32m●[0m mongodb.service - An object/document-oriented database
    Loaded: loaded (/lib/systemd/system/mongodb.service; enabled)
-   Active: [1;32mactive (running)[0m since Sun 2015-11-08 19:38:09 UTC; 4s ago
+   Active: [1;32mactive (running)[0m since Sat 2015-11-14 14:39:26 UTC; 4s ago
      Docs: man:mongod(1)
- Main PID: 897 (mongod)
+ Main PID: 20934 (mongod)
    CGroup: /system.slice/mongodb.service
-           └─897 /usr/bin/mongod --config /etc/mongodb.conf
+           └─20934 /usr/bin/mongod --config /etc/mongodb.conf
 
-Nov 08 19:38:09 debian8-p3 systemd[1]: Started An object/document-oriented database.
-Nov 08 19:38:09 debian8-p3 mongod[897]: all output going to: /var/log/mongodb/mongodb.log
+Nov 14 14:39:26 debian8-p3 systemd[1]: Started An object/document-oriented database.
+Nov 14 14:39:26 debian8-p3 mongod[20934]: all output going to: /var/log/mongodb/mongodb.log

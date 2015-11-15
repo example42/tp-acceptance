@@ -5,13 +5,12 @@ haproxy-1.5.4-4.el7_1.1.x86_64
 Redirecting to /bin/systemctl status  haproxy.service
 haproxy.service - HAProxy Load Balancer
    Loaded: loaded (/usr/lib/systemd/system/haproxy.service; enabled)
-   Active: [1;32mactive (running)[0m since Fri 2015-11-13 16:32:11 UTC; 2s ago
- Main PID: 20963 (haproxy-systemd)
+   Active: [1;32mactive (running)[0m since Sun 2015-11-15 11:01:16 UTC; 3s ago
+ Main PID: 23077 (haproxy-systemd)
    CGroup: /system.slice/haproxy.service
-           ├─20963 /usr/sbin/haproxy-systemd-wrapper -f /etc/haproxy/haproxy.cfg -p /run/haproxy.pid
-           ├─20964 /usr/sbin/haproxy -f /etc/haproxy/haproxy.cfg -p /run/haproxy.pid -Ds
-           └─20965 /usr/sbin/haproxy -f /etc/haproxy/haproxy.cfg -p /run/haproxy.pid -Ds
+           ├─23077 /usr/sbin/haproxy-systemd-wrapper -f /etc/haproxy/haproxy.cfg -p /run/haproxy.pid
+           ├─23078 /usr/sbin/haproxy -f /etc/haproxy/haproxy.cfg -p /run/haproxy.pid -Ds
+           └─23081 /usr/sbin/haproxy -f /etc/haproxy/haproxy.cfg -p /run/haproxy.pid -Ds
 
-Nov 13 16:32:11 centos7.example42.dev systemd[1]: Starting HAProxy Load Balancer...
-Nov 13 16:32:11 centos7.example42.dev systemd[1]: Started HAProxy Load Balancer.
-Nov 13 16:32:11 centos7.example42.dev haproxy-systemd-wrapper[20963]: haproxy-systemd-wrapper: executing /usr/sbin/haproxy -f /etc/haproxy/haproxy.cfg -p /run/haproxy.pid -Ds
+Nov 15 11:01:16 centos7.example42.dev systemd[1]: Started HAProxy Load Balancer.
+Nov 15 11:01:16 centos7.example42.dev haproxy-systemd-wrapper[23077]: haproxy-systemd-wrapper: executing /usr/sbin/haproxy -f /etc/haproxy/haproxy.cfg -p /run/haproxy.pid -Ds

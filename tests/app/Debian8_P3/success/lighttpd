@@ -2,17 +2,17 @@
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
 |/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
-||/ Name                                    Version                  Architecture             Description
-+++-=======================================-========================-========================-===================================================================================
-ii  lighttpd                                1.4.35-4                 amd64                    fast webserver with minimal memory footprint
+||/ Name                                         Version                     Architecture                Description
++++-============================================-===========================-===========================-==============================================================================================
+ii  lighttpd                                     1.4.35-4                    amd64                       fast webserver with minimal memory footprint
 
 # Service status
 [1;32m●[0m lighttpd.service - Lighttpd Daemon
    Loaded: loaded (/lib/systemd/system/lighttpd.service; enabled)
-   Active: [1;32mactive (running)[0m since Fri 2015-11-13 17:02:16 UTC; 2s ago
- Main PID: 13389 (lighttpd)
+   Active: [1;32mactive (running)[0m since Sun 2015-11-15 11:53:17 UTC; 3s ago
+ Main PID: 11626 (lighttpd)
    CGroup: /system.slice/lighttpd.service
-           └─13389 /usr/sbin/lighttpd -D -f /etc/lighttpd/lighttpd.conf
+           └─11626 /usr/sbin/lighttpd -D -f /etc/lighttpd/lighttpd.conf
 
-Nov 13 17:02:16 debian8-p3 lighttpd[13382]: Syntax OK
-Nov 13 17:02:16 debian8-p3 systemd[1]: Started Lighttpd Daemon.
+Nov 15 11:53:17 debian8-p3 lighttpd[11619]: Syntax OK
+Nov 15 11:53:17 debian8-p3 systemd[1]: Started Lighttpd Daemon.

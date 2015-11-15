@@ -7,4 +7,4 @@ Desired=Unknown/Install/Remove/Purge/Hold
 ii  munin-node                                   1.4.5-3                                      network-wide graphing framework (node)
 
 # Service status
-Munin-Node is running (PID: 934).
+Munin-Node is running (PID: 9895).

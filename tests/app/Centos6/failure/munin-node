@@ -1,0 +1,5 @@
+# Package status
+package munin-node is not installed
+
+# Service status
+munin-node: unrecognized service

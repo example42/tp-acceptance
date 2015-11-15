@@ -1,1 +1,2 @@
-sudo: /etc/tp/test/nagios-plugins: command not found
+# Package status
+package nagios-plugins-all is not installed

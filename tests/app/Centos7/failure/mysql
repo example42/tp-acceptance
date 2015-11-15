@@ -1,1 +1,9 @@
-sudo: /etc/tp/test/mysql: command not found
+# Package status
+package mysql-server is not installed
+
+# Service status
+Redirecting to /bin/systemctl status  mysqld.service
+mysqld.service
+   Loaded: not-found (Reason: No such file or directory)
+   Active: inactive (dead)
+

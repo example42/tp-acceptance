@@ -2,15 +2,14 @@
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
 |/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
-||/ Name                                    Version                  Architecture             Description
-+++-=======================================-========================-========================-===================================================================================
-ii  activemq                                5.6.0+dfsg1-4+deb8u1     all                      Java message broker - server
+||/ Name                                         Version                     Architecture                Description
++++-============================================-===========================-===========================-==============================================================================================
+ii  activemq                                     5.6.0+dfsg1-4+deb8u1        all                         Java message broker - server
 
 # Service status
 [1;32m●[0m activemq.service - LSB: ActiveMQ instance
    Loaded: loaded (/etc/init.d/activemq)
-   Active: [1;32mactive (exited)[0m since Fri 2015-11-13 14:14:56 UTC; 3s ago
+   Active: [1;32mactive (exited)[0m since Sun 2015-11-15 08:17:16 UTC; 3s ago
 
-Nov 13 14:14:56 debian8-p3 systemd[1]: Starting LSB: ActiveMQ instance...
-Nov 13 14:14:56 debian8-p3 activemq[9327]: Starting ActiveMQ instance : activemqNo instances found at /etc/activemq/instances-enabled.
-Nov 13 14:14:56 debian8-p3 systemd[1]: Started LSB: ActiveMQ instance.
+Nov 15 08:17:16 debian8-p3 activemq[9043]: Starting ActiveMQ instance : activemqNo instances found at /etc/activemq/instances-enabled.
+Nov 15 08:17:16 debian8-p3 systemd[1]: Started LSB: ActiveMQ instance.

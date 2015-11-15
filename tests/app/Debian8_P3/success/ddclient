@@ -2,18 +2,18 @@
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
 |/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
-||/ Name                                    Version                  Architecture             Description
-+++-=======================================-========================-========================-===================================================================================
-ii  ddclient                                3.8.2-2                  all                      address updating utility for dynamic DNS services
+||/ Name                                         Version                     Architecture                Description
++++-============================================-===========================-===========================-==============================================================================================
+ii  ddclient                                     3.8.2-2                     all                         address updating utility for dynamic DNS services
 
 # Service status
 [1;32m●[0m ddclient.service - LSB: Update dynamic domain name service entries
    Loaded: loaded (/etc/init.d/ddclient)
-   Active: [1;32mactive (running)[0m since Fri 2015-11-13 15:04:05 UTC; 2s ago
+   Active: [1;32mactive (running)[0m since Sun 2015-11-15 08:59:47 UTC; 3s ago
    CGroup: /system.slice/ddclient.service
-           └─20534 ddclient - sleeping for 300 seconds
+           └─20140 ddclient - sleeping for 300 seconds
 
-Nov 13 15:04:05 debian8-p3 ddclient[20527]: WARNING:  file /etc/ddclient.conf, line 8: Invalid Value for keyword 'login' = ''
-Nov 13 15:04:05 debian8-p3 ddclient[20533]: [1;39mWARNING:  file /etc/ddclient.conf, line 8: Invalid Value for keyword 'login' = ''[0m
-Nov 13 15:04:05 debian8-p3 systemd[1]: Started LSB: Update dynamic domain name service entries.
-Nov 13 15:04:05 debian8-p3 ddclient[20536]: [1;39mWARNING:  file /etc/ddclient.conf, line 8: Invalid Value for keyword 'login' = ''[0m
+Nov 15 08:59:47 debian8-p3 ddclient[20133]: WARNING:  file /etc/ddclient.conf, line 8: Invalid Value for keyword 'login' = ''
+Nov 15 08:59:47 debian8-p3 ddclient[20139]: [1;39mWARNING:  file /etc/ddclient.conf, line 8: Invalid Value for keyword 'login' = ''[0m
+Nov 15 08:59:47 debian8-p3 systemd[1]: Started LSB: Update dynamic domain name service entries.
+Nov 15 08:59:47 debian8-p3 ddclient[20142]: [1;39mWARNING:  file /etc/ddclient.conf, line 8: Invalid Value for keyword 'login' = ''[0m

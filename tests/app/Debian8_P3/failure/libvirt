@@ -2,9 +2,9 @@
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
 |/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
-||/ Name                                    Version                  Architecture             Description
-+++-=======================================-========================-========================-===================================================================================
-ii  libvirt-bin                             1.2.9-9+deb8u1           amd64                    programs for the libvirt library
+||/ Name                                         Version                     Architecture                Description
++++-============================================-===========================-===========================-==============================================================================================
+ii  libvirt-bin                                  1.2.9-9+deb8u1              amd64                       programs for the libvirt library
 
 # Service status
 ● libvirt-bin.service

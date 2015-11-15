@@ -5,22 +5,22 @@ libvirt-1.2.8-16.el7_1.5.x86_64
 Redirecting to /bin/systemctl status  libvirtd.service
 libvirtd.service - Virtualization daemon
    Loaded: loaded (/usr/lib/systemd/system/libvirtd.service; enabled)
-   Active: [1;32mactive (running)[0m since Fri 2015-11-13 16:57:38 UTC; 2s ago
+   Active: [1;32mactive (running)[0m since Sun 2015-11-15 11:46:47 UTC; 3s ago
      Docs: man:libvirtd(8)
            http://libvirt.org
- Main PID: 23815 (libvirtd)
+ Main PID: 25310 (libvirtd)
    CGroup: /system.slice/libvirtd.service
-           ├─23815 /usr/sbin/libvirtd
-           ├─23921 /sbin/dnsmasq --conf-file=/var/lib/libvirt/dnsmasq/default.conf --dhcp-script=/usr/libexec/libvirt_leaseshelper
-           └─23922 /sbin/dnsmasq --conf-file=/var/lib/libvirt/dnsmasq/default.conf --dhcp-script=/usr/libexec/libvirt_leaseshelper
+           ├─25310 /usr/sbin/libvirtd
+           ├─25410 /sbin/dnsmasq --conf-file=/var/lib/libvirt/dnsmasq/default.conf --dhcp-script=/usr/libexec/libvirt_leaseshelper
+           └─25411 /sbin/dnsmasq --conf-file=/var/lib/libvirt/dnsmasq/default.conf --dhcp-script=/usr/libexec/libvirt_leaseshelper
 
-Nov 13 16:57:38 centos7.example42.dev systemd[1]: Starting Virtualization daemon...
-Nov 13 16:57:38 centos7.example42.dev systemd[1]: Started Virtualization daemon.
-Nov 13 16:57:38 centos7.example42.dev dnsmasq[23921]: started, version 2.66 cachesize 150
-Nov 13 16:57:38 centos7.example42.dev dnsmasq[23921]: compile time options: IPv6 GNU-getopt DBus no-i18n IDN DHCP DHCPv6 no-Lua TFTP no-conntrack ipset auth
-Nov 13 16:57:38 centos7.example42.dev dnsmasq-dhcp[23921]: DHCP, IP range 192.168.122.2 -- 192.168.122.254, lease time 1h
-Nov 13 16:57:38 centos7.example42.dev dnsmasq[23921]: reading /etc/resolv.conf
-Nov 13 16:57:38 centos7.example42.dev dnsmasq[23921]: using nameserver 10.0.2.3#53
-Nov 13 16:57:38 centos7.example42.dev dnsmasq[23921]: read /etc/hosts - 2 addresses
-Nov 13 16:57:38 centos7.example42.dev dnsmasq[23921]: read /var/lib/libvirt/dnsmasq/default.addnhosts - 0 addresses
-Nov 13 16:57:38 centos7.example42.dev dnsmasq-dhcp[23921]: read /var/lib/libvirt/dnsmasq/default.hostsfile
+Nov 15 11:46:47 centos7.example42.dev systemd[1]: Starting Virtualization daemon...
+Nov 15 11:46:47 centos7.example42.dev systemd[1]: Started Virtualization daemon.
+Nov 15 11:46:47 centos7.example42.dev dnsmasq[25410]: started, version 2.66 cachesize 150
+Nov 15 11:46:47 centos7.example42.dev dnsmasq[25410]: compile time options: IPv6 GNU-getopt DBus no-i18n IDN DHCP DHCPv6 no-Lua TFTP no-conntrack ipset auth
+Nov 15 11:46:47 centos7.example42.dev dnsmasq-dhcp[25410]: DHCP, IP range 192.168.122.2 -- 192.168.122.254, lease time 1h
+Nov 15 11:46:47 centos7.example42.dev dnsmasq[25410]: reading /etc/resolv.conf
+Nov 15 11:46:47 centos7.example42.dev dnsmasq[25410]: using nameserver 10.0.2.3#53
+Nov 15 11:46:47 centos7.example42.dev dnsmasq[25410]: read /etc/hosts - 2 addresses
+Nov 15 11:46:47 centos7.example42.dev dnsmasq[25410]: read /var/lib/libvirt/dnsmasq/default.addnhosts - 0 addresses
+Nov 15 11:46:47 centos7.example42.dev dnsmasq-dhcp[25410]: read /var/lib/libvirt/dnsmasq/default.hostsfile

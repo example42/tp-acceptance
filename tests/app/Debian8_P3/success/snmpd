@@ -1,0 +1,23 @@
+# Package status
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name                                         Version                     Architecture                Description
++++-============================================-===========================-===========================-==============================================================================================
+ii  snmpd                                        5.7.2.1+dfsg-1              amd64                       SNMP (Simple Network Management Protocol) agents
+
+# Service status
+[1;32m●[0m snmpd.service - LSB: SNMP agents
+   Loaded: loaded (/etc/init.d/snmpd)
+   Active: [1;32mactive (running)[0m since Sun 2015-11-15 17:11:06 UTC; 3s ago
+   CGroup: /system.slice/snmpd.service
+           └─14765 /usr/sbin/snmpd -Lsd -Lf /dev/null -u snmp -g snmp -I -smux mteTrigger mteTriggerConf -p /run/snmpd.pid
+
+Nov 15 17:11:06 debian8-p3 snmpd[14763]: Created directory: /var/lib/snmp/mib_indexes
+Nov 15 17:11:06 debian8-p3 snmpd[14763]: [1;39m/etc/snmp/snmpd.conf: line 145: Warning: Unknown token: defaultMonitors.[0m
+Nov 15 17:11:06 debian8-p3 snmpd[14763]: [1;39m/etc/snmp/snmpd.conf: line 147: Warning: Unknown token: linkUpDownNotifications.[0m
+Nov 15 17:11:06 debian8-p3 snmpd[14763]: Turning on AgentX master support.
+Nov 15 17:11:06 debian8-p3 snmpd[14763]: Created directory: /var/agentx
+Nov 15 17:11:06 debian8-p3 systemd[1]: Started LSB: SNMP agents.
+Nov 15 17:11:06 debian8-p3 snmpd[14760]: Starting SNMP services::  snmpd
+Nov 15 17:11:06 debian8-p3 snmpd[14765]: NET-SNMP version 5.7.2.1

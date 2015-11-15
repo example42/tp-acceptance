@@ -1,0 +1,14 @@
+# Package status
+net-snmp-5.7.2-20.el7_1.1.x86_64
+
+# Service status
+Redirecting to /bin/systemctl status  snmpd.service
+snmpd.service - Simple Network Management Protocol (SNMP) Daemon.
+   Loaded: loaded (/usr/lib/systemd/system/snmpd.service; enabled)
+   Active: [1;32mactive (running)[0m since Sun 2015-11-15 17:09:38 UTC; 3s ago
+ Main PID: 26574 (snmpd)
+   CGroup: /system.slice/snmpd.service
+           └─26574 /usr/sbin/snmpd -LS0-6d -f
+
+Nov 15 17:09:38 centos7.example42.dev snmpd[26574]: NET-SNMP version 5.7.2
+Nov 15 17:09:38 centos7.example42.dev systemd[1]: Started Simple Network Management Protocol (SNMP) Daemon..

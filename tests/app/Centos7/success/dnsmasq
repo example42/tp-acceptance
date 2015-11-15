@@ -5,15 +5,15 @@ dnsmasq-2.66-12.el7.x86_64
 Redirecting to /bin/systemctl status  dnsmasq.service
 dnsmasq.service - DNS caching server.
    Loaded: loaded (/usr/lib/systemd/system/dnsmasq.service; enabled)
-   Active: [1;32mactive (running)[0m since Fri 2015-11-13 15:07:53 UTC; 2s ago
- Main PID: 17255 (dnsmasq)
+   Active: [1;32mactive (running)[0m since Sun 2015-11-15 09:03:41 UTC; 3s ago
+ Main PID: 19765 (dnsmasq)
    CGroup: /system.slice/dnsmasq.service
-           └─17255 /usr/sbin/dnsmasq -k
+           └─19765 /usr/sbin/dnsmasq -k
 
-Nov 13 15:07:53 centos7.example42.dev systemd[1]: Starting DNS caching server....
-Nov 13 15:07:53 centos7.example42.dev systemd[1]: Started DNS caching server..
-Nov 13 15:07:53 centos7.example42.dev dnsmasq[17255]: started, version 2.66 cachesize 150
-Nov 13 15:07:53 centos7.example42.dev dnsmasq[17255]: compile time options: IPv6 GNU-getopt DBus no-i18n IDN DHCP DHCPv6 no-Lua TFTP no-conntrack ipset auth
-Nov 13 15:07:53 centos7.example42.dev dnsmasq[17255]: reading /etc/resolv.conf
-Nov 13 15:07:53 centos7.example42.dev dnsmasq[17255]: using nameserver 10.0.2.3#53
-Nov 13 15:07:53 centos7.example42.dev dnsmasq[17255]: read /etc/hosts - 2 addresses
+Nov 15 09:03:41 centos7.example42.dev systemd[1]: Starting DNS caching server....
+Nov 15 09:03:41 centos7.example42.dev systemd[1]: Started DNS caching server..
+Nov 15 09:03:41 centos7.example42.dev dnsmasq[19765]: started, version 2.66 cachesize 150
+Nov 15 09:03:41 centos7.example42.dev dnsmasq[19765]: compile time options: IPv6 GNU-getopt DBus no-i18n IDN DHCP DHCPv6 no-Lua TFTP no-conntrack ipset auth
+Nov 15 09:03:41 centos7.example42.dev dnsmasq[19765]: reading /etc/resolv.conf
+Nov 15 09:03:41 centos7.example42.dev dnsmasq[19765]: using nameserver 10.0.2.3#53
+Nov 15 09:03:41 centos7.example42.dev dnsmasq[19765]: read /etc/hosts - 2 addresses

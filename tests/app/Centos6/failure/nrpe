@@ -1,0 +1,5 @@
+# Package status
+package nrpe is not installed
+
+# Service status
+nrpe: unrecognized service

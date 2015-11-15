@@ -1,0 +1,16 @@
+# Package status
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name                                         Version                     Architecture                Description
++++-============================================-===========================-===========================-==============================================================================================
+ii  sysstat                                      11.0.1-1                    amd64                       system performance tools for Linux
+
+# Service status
+[1;32m●[0m sysstat.service - LSB: Start/stop sysstat's sadc
+   Loaded: loaded (/etc/init.d/sysstat)
+   Active: [1;32mactive (exited)[0m since Sun 2015-11-15 17:26:08 UTC; 2s ago
+  Process: 21939 ExecStart=/etc/init.d/sysstat start (code=exited, status=0/SUCCESS)
+
+Nov 15 17:26:08 debian8-p3 systemd[1]: Starting LSB: Start/stop sysstat's sadc...
+Nov 15 17:26:08 debian8-p3 systemd[1]: Started LSB: Start/stop sysstat's sadc.

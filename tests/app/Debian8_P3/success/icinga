@@ -2,24 +2,24 @@
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
 |/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
-||/ Name                                    Version                  Architecture             Description
-+++-=======================================-========================-========================-===================================================================================
-ii  icinga                                  1.11.6-1+b4              amd64                    host and network monitoring system - metapackage
+||/ Name                                         Version                     Architecture                Description
++++-============================================-===========================-===========================-==============================================================================================
+ii  icinga                                       1.11.6-1+b4                 amd64                       host and network monitoring system - metapackage
 
 # Service status
 [1;32m●[0m icinga.service - LSB: icinga host/service/network monitoring and management system
    Loaded: loaded (/etc/init.d/icinga)
-   Active: [1;32mactive (running)[0m since Fri 2015-11-13 16:43:41 UTC; 8s ago
+   Active: [1;32mactive (running)[0m since Sun 2015-11-15 11:21:28 UTC; 9s ago
    CGroup: /system.slice/icinga.service
-           └─3303 /usr/sbin/icinga -d /etc/icinga/icinga.cfg
+           └─1538 /usr/sbin/icinga -d /etc/icinga/icinga.cfg
 
-Nov 13 16:43:41 debian8-p3 icinga[3302]: Icinga 1.11.6 starting... (PID=3302)
-Nov 13 16:43:41 debian8-p3 icinga[3302]: Local time is Fri Nov 13 16:43:41 UTC 2015
-Nov 13 16:43:41 debian8-p3 icinga[3302]: LOG VERSION: 2.0
-Nov 13 16:43:41 debian8-p3 icinga[3302]: Warning: Object definition type 'hostextinfo' is DEPRECATED in file '/etc/icinga/objects/extinfo_icinga.cfg' on line 5.
-Nov 13 16:43:41 debian8-p3 icinga[3302]: Warning: Variable 'normal_check_interval' with value '5' is DEPRECATED. Replace it with 'check_interval'.
-Nov 13 16:43:41 debian8-p3 icinga[3302]: Warning: Variable 'retry_check_interval' with value '1' is DEPRECATED. Replace it with 'retry_interval'.
-Nov 13 16:43:41 debian8-p3 icinga[3272]: Starting icinga monitoring daemon: icinga.
-Nov 13 16:43:41 debian8-p3 systemd[1]: Started LSB: icinga host/service/network monitoring and management system.
-Nov 13 16:43:41 debian8-p3 icinga[3303]: Finished daemonizing... (New PID=3303)
-Nov 13 16:43:41 debian8-p3 icinga[3303]: Event loop started...
+Nov 15 11:21:28 debian8-p3 icinga[1537]: Icinga 1.11.6 starting... (PID=1537)
+Nov 15 11:21:28 debian8-p3 icinga[1537]: Local time is Sun Nov 15 11:21:28 UTC 2015
+Nov 15 11:21:28 debian8-p3 icinga[1537]: LOG VERSION: 2.0
+Nov 15 11:21:28 debian8-p3 icinga[1537]: Warning: Object definition type 'hostextinfo' is DEPRECATED in file '/etc/icinga/objects/extinfo_icinga.cfg' on line 5.
+Nov 15 11:21:28 debian8-p3 icinga[1537]: Warning: Variable 'normal_check_interval' with value '5' is DEPRECATED. Replace it with 'check_interval'.
+Nov 15 11:21:28 debian8-p3 icinga[1537]: Warning: Variable 'retry_check_interval' with value '1' is DEPRECATED. Replace it with 'retry_interval'.
+Nov 15 11:21:28 debian8-p3 icinga[1507]: Starting icinga monitoring daemon: icinga.
+Nov 15 11:21:28 debian8-p3 systemd[1]: Started LSB: icinga host/service/network monitoring and management system.
+Nov 15 11:21:28 debian8-p3 icinga[1538]: Finished daemonizing... (New PID=1538)
+Nov 15 11:21:28 debian8-p3 icinga[1538]: Event loop started...

@@ -1,0 +1,5 @@
+# Package status
+package nginx is not installed
+
+# Service status
+nginx: unrecognized service

@@ -1,0 +1,15 @@
+# Package status
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name                                         Version                     Architecture                Description
++++-============================================-===========================-===========================-==============================================================================================
+ii  tinc                                         1.0.24-2.1+b1               amd64                       Virtual Private Network daemon
+
+# Service status
+[1;32m●[0m tinc.service - LSB: Start tinc daemons
+   Loaded: loaded (/etc/init.d/tinc)
+   Active: [1;32mactive (exited)[0m since Sun 2015-11-15 17:31:03 UTC; 3s ago
+
+Nov 15 17:31:03 debian8-p3 tinc[24346]: Starting tinc daemons:.
+Nov 15 17:31:03 debian8-p3 systemd[1]: Started LSB: Start tinc daemons.

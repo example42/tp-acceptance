@@ -1,1 +1,2 @@
-sudo: /etc/tp/test/msmtp: command not found
+# Package status
+package msmtp is not installed

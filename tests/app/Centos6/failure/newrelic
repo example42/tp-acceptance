@@ -1,0 +1,5 @@
+# Package status
+package newrelic-sysmond is not installed
+
+# Service status
+newrelic-sysmond: unrecognized service

@@ -7,4 +7,4 @@ Desired=Unknown/Install/Remove/Purge/Hold
 ii  mariadb-server                               5.5.46-1ubuntu0.14.04.2     all                         MariaDB database server (metapackage depending on the latest version)
 
 # Service status
-mysql start/running, process 491
+mysql start/running, process 32111

@@ -2,4 +2,4 @@
 elasticsearch-1.5.2-1.noarch
 
 # Service status
-elasticsearch is stopped
+elasticsearch dead but subsys locked

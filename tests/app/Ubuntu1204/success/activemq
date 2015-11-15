@@ -2,9 +2,9 @@
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
 |/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
-||/ Name                                    Version                                 Description
-+++-=======================================-=======================================-==============================================================================================
-ii  activemq                                5.5.0+dfsg-6ubuntu1.1                   Java message broker - server
+||/ Name                                         Version                                      Description
++++-============================================-============================================-========================================================================================================
+ii  activemq                                     5.5.0+dfsg-6ubuntu1.1                        Java message broker - server
 
 # Service status
- * Checking status of ActiveMQ instance activemq       [181G [175G[ OK ]
+ * Checking status of ActiveMQ instance activemq       [203G [197G[ OK ]

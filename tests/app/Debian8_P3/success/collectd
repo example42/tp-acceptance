@@ -2,21 +2,21 @@
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
 |/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
-||/ Name                                    Version                  Architecture             Description
-+++-=======================================-========================-========================-===================================================================================
-ii  collectd                                5.4.1-6                  amd64                    statistics collection and monitoring daemon
+||/ Name                                         Version                     Architecture                Description
++++-============================================-===========================-===========================-==============================================================================================
+ii  collectd                                     5.4.1-6                     amd64                       statistics collection and monitoring daemon
 
 # Service status
 [1;32m●[0m collectd.service - LSB: manage the statistics collection daemon
    Loaded: loaded (/etc/init.d/collectd)
-   Active: [1;32mactive (running)[0m since Fri 2015-11-13 14:56:06 UTC; 4s ago
+   Active: [1;32mactive (running)[0m since Sun 2015-11-15 08:51:58 UTC; 5s ago
    CGroup: /system.slice/collectd.service
-           ├─17294 /usr/sbin/collectdmon -P /var/run/collectd.pid -- -C /etc/collectd/collectd.conf
-           └─17296 collectd -C /etc/collectd/collectd.conf -f
+           ├─16901 /usr/sbin/collectdmon -P /var/run/collectd.pid -- -C /etc/collectd/collectd.conf
+           └─16903 collectd -C /etc/collectd/collectd.conf -f
 
-Nov 13 14:56:06 debian8-p3 systemd[1]: Starting LSB: manage the statistics collection daemon...
-Nov 13 14:56:06 debian8-p3 collectd[17288]: Starting statistics collection and monitoring daemon: collectd.
-Nov 13 14:56:06 debian8-p3 systemd[1]: Started LSB: manage the statistics collection daemon.
-Nov 13 14:56:06 debian8-p3 collectd[17296]: Initialization complete, entering read-loop.
-Nov 13 14:56:06 debian8-p3 collectd[17296]: [1;39mbattery plugin: Failed to access `/proc/acpi/battery': No such file or directory[0m
-Nov 13 14:56:06 debian8-p3 collectd[17296]: rrdtool plugin: Adjusting "RandomTimeout" to 0.000 seconds.
+Nov 15 08:51:58 debian8-p3 systemd[1]: Starting LSB: manage the statistics collection daemon...
+Nov 15 08:51:58 debian8-p3 collectd[16895]: Starting statistics collection and monitoring daemon: collectd.
+Nov 15 08:51:58 debian8-p3 systemd[1]: Started LSB: manage the statistics collection daemon.
+Nov 15 08:51:58 debian8-p3 collectd[16903]: Initialization complete, entering read-loop.
+Nov 15 08:51:58 debian8-p3 collectd[16903]: [1;39mbattery plugin: Failed to access `/proc/acpi/battery': No such file or directory[0m
+Nov 15 08:51:58 debian8-p3 collectd[16903]: rrdtool plugin: Adjusting "RandomTimeout" to 0.000 seconds.

@@ -1,0 +1,5 @@
+# Package status
+package fail2ban is not installed
+
+# Service status
+fail2ban: unrecognized service
