@@ -1,0 +1,22 @@
+# Package status
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name                                         Version                     Architecture                Description
++++-============================================-===========================-===========================-==============================================================================================
+ii  zabbix-agent                                 1:2.2.7+dfsg-2              amd64                       network monitoring solution - agent
+
+# Service status
+[1;32m●[0m zabbix-agent.service - LSB: Start zabbix-agent daemon
+   Loaded: loaded (/etc/init.d/zabbix-agent)
+   Active: [1;32mactive (running)[0m since Sun 2015-11-15 17:44:39 UTC; 3s ago
+   CGroup: /system.slice/zabbix-agent.service
+           ├─32702 /usr/sbin/zabbix_agentd
+           ├─32705 /usr/sbin/zabbix_agentd: collector [idle 1 sec]
+           ├─32706 /usr/sbin/zabbix_agentd: listener #1 [waiting for connection]
+           ├─32707 /usr/sbin/zabbix_agentd: listener #2 [waiting for connection]
+           ├─32708 /usr/sbin/zabbix_agentd: listener #3 [waiting for connection]
+           └─32709 /usr/sbin/zabbix_agentd: active checks #1 [idle 1 sec]
+
+Nov 15 17:44:39 debian8-p3 zabbix-agent[32695]: zabbix_agentd starting...done.
+Nov 15 17:44:39 debian8-p3 systemd[1]: Started LSB: Start zabbix-agent daemon.

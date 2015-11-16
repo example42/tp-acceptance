@@ -1,0 +1,5 @@
+# Package status
+package ceph is not installed
+
+# Service status
+ceph: unrecognized service

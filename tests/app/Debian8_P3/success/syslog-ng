@@ -1,0 +1,19 @@
+# Package status
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name                                         Version                     Architecture                Description
++++-============================================-===========================-===========================-==============================================================================================
+ii  syslog-ng                                    3.5.6-2                     all                         Enhanced system logging daemon (metapackage)
+
+# Service status
+[1;32m●[0m syslog-ng.service - System Logger Daemon
+   Loaded: loaded (/lib/systemd/system/syslog-ng.service; enabled)
+   Active: [1;32mactive (running)[0m since Sun 2015-11-15 17:23:38 UTC; 3s ago
+     Docs: man:syslog-ng(8)
+ Main PID: 20740 (syslog-ng)
+   CGroup: /system.slice/syslog-ng.service
+           └─20740 /usr/sbin/syslog-ng -F
+
+Nov 15 17:23:38 debian8-p3 systemd[1]: Starting System Logger Daemon...
+Nov 15 17:23:38 debian8-p3 systemd[1]: Started System Logger Daemon.

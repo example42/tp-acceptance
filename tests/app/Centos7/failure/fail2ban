@@ -1,0 +1,9 @@
+# Package status
+package fail2ban is not installed
+
+# Service status
+Redirecting to /bin/systemctl status  fail2ban.service
+fail2ban.service
+   Loaded: not-found (Reason: No such file or directory)
+   Active: inactive (dead)
+

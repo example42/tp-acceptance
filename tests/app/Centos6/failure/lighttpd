@@ -1,0 +1,5 @@
+# Package status
+package lighttpd is not installed
+
+# Service status
+lighttpd: unrecognized service

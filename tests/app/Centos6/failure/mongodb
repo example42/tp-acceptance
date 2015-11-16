@@ -1,1 +1,5 @@
-sudo: /etc/tp/test/mongodb: command not found
+# Package status
+package mongodb-server is not installed
+
+# Service status
+mongodb: unrecognized service

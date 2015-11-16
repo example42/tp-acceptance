@@ -1,0 +1,13 @@
+# Package status
+nfs-utils-1.3.0-0.el7.x86_64
+
+# Service status
+Redirecting to /bin/systemctl status  nfs.service
+nfs-server.service - NFS Server
+   Loaded: loaded (/usr/lib/systemd/system/nfs-server.service; disabled)
+   Active: [1;32mactive (exited)[0m since Sat 2015-11-14 15:03:12 UTC; 3s ago
+ Main PID: 30272 (code=exited, status=0/SUCCESS)
+   CGroup: /system.slice/nfs-server.service
+
+Nov 14 15:03:12 centos7.example42.dev systemd[1]: Starting NFS Server...
+Nov 14 15:03:12 centos7.example42.dev systemd[1]: Started NFS Server.

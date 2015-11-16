@@ -1,0 +1,5 @@
+# Package status
+package exim is not installed
+
+# Service status
+exim: unrecognized service

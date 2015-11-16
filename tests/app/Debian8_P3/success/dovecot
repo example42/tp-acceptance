@@ -2,25 +2,24 @@
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
 |/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
-||/ Name                                    Version                  Architecture             Description
-+++-=======================================-========================-========================-===================================================================================
-ii  dovecot-imapd                           1:2.2.13-12~deb8u1       amd64                    secure POP3/IMAP server - IMAP daemon
+||/ Name                                         Version                     Architecture                Description
++++-============================================-===========================-===========================-==============================================================================================
+ii  dovecot-imapd                                1:2.2.13-12~deb8u1          amd64                       secure POP3/IMAP server - IMAP daemon
 
 # Service status
 [1;32m●[0m dovecot.service - Dovecot IMAP/POP3 email server
    Loaded: loaded (/lib/systemd/system/dovecot.service; enabled)
-   Active: [1;32mactive (running)[0m since Fri 2015-11-13 15:12:13 UTC; 3s ago
- Main PID: 26225 (dovecot)
+   Active: [1;32mactive (running)[0m since Sun 2015-11-15 09:08:12 UTC; 4s ago
+ Main PID: 25768 (dovecot)
    CGroup: /system.slice/dovecot.service
-           ├─26225 /usr/sbin/dovecot -F
-           ├─26228 dovecot/anvil
-           ├─26229 dovecot/log
-           ├─26230 dovecot/ssl-params
-           └─26231 dovecot/config
+           ├─25768 /usr/sbin/dovecot -F
+           ├─25771 dovecot/anvil
+           ├─25772 dovecot/log
+           ├─25773 dovecot/ssl-params
+           ├─25774 dovecot/config
+           └─25776 dovecot/ssl-params
 
-Nov 13 15:12:13 debian8-p3 systemd[1]: Starting Dovecot IMAP/POP3 email server...
-Nov 13 15:12:13 debian8-p3 systemd[1]: Started Dovecot IMAP/POP3 email server.
-Nov 13 15:12:13 debian8-p3 dovecot[26225]: master: Dovecot v2.2.13 starting up for imap (core dumps disabled)
-Nov 13 15:12:14 debian8-p3 dovecot[26229]: ssl-params: Generating SSL parameters
-Nov 13 15:12:14 debian8-p3 systemd[1]: Started Dovecot IMAP/POP3 email server.
-Nov 13 15:12:16 debian8-p3 dovecot[26229]: ssl-params: SSL parameters regeneration completed
+Nov 15 09:08:12 debian8-p3 systemd[1]: Started Dovecot IMAP/POP3 email server.
+Nov 15 09:08:12 debian8-p3 dovecot[25768]: master: Dovecot v2.2.13 starting up for imap (core dumps disabled)
+Nov 15 09:08:12 debian8-p3 dovecot[25772]: ssl-params: Generating SSL parameters
+Nov 15 09:08:12 debian8-p3 systemd[1]: Started Dovecot IMAP/POP3 email server.

@@ -1,0 +1,5 @@
+# Package status
+package heartbeat is not installed
+
+# Service status
+heartbeat: unrecognized service

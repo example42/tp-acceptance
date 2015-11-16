@@ -1,0 +1,18 @@
+# Package status
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name                                         Version                     Architecture                Description
++++-============================================-===========================-===========================-==============================================================================================
+ii  tftpd-hpa                                    5.2+20140608-3              amd64                       HPA's tftp server
+
+# Service status
+[1;32m●[0m tftpd-hpa.service - LSB: HPA's tftp server
+   Loaded: loaded (/etc/init.d/tftpd-hpa)
+   Active: [1;32mactive (running)[0m since Sun 2015-11-15 17:28:34 UTC; 3s ago
+   CGroup: /system.slice/tftpd-hpa.service
+           └─23238 /usr/sbin/in.tftpd --listen --user tftp --address 0.0.0.0:69 --secure /srv/tftp
+
+Nov 15 17:28:34 debian8-p3 systemd[1]: Starting LSB: HPA's tftp server...
+Nov 15 17:28:34 debian8-p3 tftpd-hpa[23232]: Starting HPA's tftpd: in.tftpd.
+Nov 15 17:28:34 debian8-p3 systemd[1]: Started LSB: HPA's tftp server.

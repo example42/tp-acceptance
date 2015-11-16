@@ -1,0 +1,5 @@
+# Package status
+package nagios is not installed
+
+# Service status
+nagios: unrecognized service

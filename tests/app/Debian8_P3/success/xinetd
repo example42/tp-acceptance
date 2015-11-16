@@ -1,0 +1,17 @@
+# Package status
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name                                         Version                     Architecture                Description
++++-============================================-===========================-===========================-==============================================================================================
+ii  xinetd                                       1:2.3.15-3                  amd64                       replacement for inetd with many enhancements
+
+# Service status
+[1;32m●[0m xinetd.service - LSB: Starts or stops the xinetd daemon.
+   Loaded: loaded (/etc/init.d/xinetd)
+   Active: [1;32mactive (running)[0m since Sun 2015-11-15 17:42:09 UTC; 3s ago
+   CGroup: /system.slice/xinetd.service
+           └─31231 /usr/sbin/xinetd -pidfile /run/xinetd.pid -stayalive -inetd_compat -inetd_ipv6
+
+Nov 15 17:42:09 debian8-p3 xinetd[31222]: Starting internet superserver: xinetd.
+Nov 15 17:42:09 debian8-p3 systemd[1]: Started LSB: Starts or stops the xinetd daemon..

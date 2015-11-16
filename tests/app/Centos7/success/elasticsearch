@@ -1,0 +1,15 @@
+# Package status
+elasticsearch-1.5.2-1.noarch
+
+# Service status
+elasticsearch.service - Starts and stops a single elasticsearch instance on this system
+   Loaded: loaded (/usr/lib/systemd/system/elasticsearch.service; enabled)
+   Active: [1;32mactive (running)[0m since Sun 2015-11-15 09:12:41 UTC; 4s ago
+     Docs: http://www.elasticsearch.org
+ Main PID: 20668 (java)
+   CGroup: /system.slice/elasticsearch.service
+           └─20668 java -Xms256m -Xmx1g -Djava.awt.headless=true -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+HeapDumpOnOutOfM...
+
+Nov 15 09:12:41 centos7.example42.dev systemd[1]: Starting Starts and stops a single elasticsearch instance on this system...
+Nov 15 09:12:41 centos7.example42.dev systemd[1]: PID file /var/run/elasticsearch/elasticsearch.pid not readable (yet?) after start.
+Nov 15 09:12:41 centos7.example42.dev systemd[1]: Started Starts and stops a single elasticsearch instance on this system.

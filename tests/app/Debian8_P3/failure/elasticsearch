@@ -2,24 +2,24 @@
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
 |/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
-||/ Name                                    Version                  Architecture             Description
-+++-=======================================-========================-========================-===================================================================================
-ii  elasticsearch                           1.5.2                    all                      Open Source, Distributed, RESTful Search Engine
+||/ Name                                         Version                     Architecture                Description
++++-============================================-===========================-===========================-==============================================================================================
+ii  elasticsearch                                1.5.2                       all                         Open Source, Distributed, RESTful Search Engine
 
 # Service status
 [1;31m●[0m elasticsearch.service - Starts and stops a single elasticsearch instance on this system
    Loaded: loaded (/usr/lib/systemd/system/elasticsearch.service; disabled)
-   Active: [1;31mfailed[0m (Result: exit-code) since Fri 2015-11-13 15:54:18 UTC; 2s ago
+   Active: [1;31mfailed[0m (Result: exit-code) since Sun 2015-11-15 09:15:48 UTC; 2s ago
      Docs: http://www.elasticsearch.org
- Main PID: 29086 (code=exited, status=3)
+ Main PID: 28625 (code=exited, status=3)
 
-Nov 13 15:54:18 debian8-p3 elasticsearch[29086]: at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
-Nov 13 15:54:18 debian8-p3 elasticsearch[29086]: at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:383)
-Nov 13 15:54:18 debian8-p3 elasticsearch[29086]: at java.nio.file.Files.createDirectory(Files.java:630)
-Nov 13 15:54:18 debian8-p3 elasticsearch[29086]: at java.nio.file.Files.createAndCheckIsDirectory(Files.java:734)
-Nov 13 15:54:18 debian8-p3 elasticsearch[29086]: at java.nio.file.Files.createDirectories(Files.java:720)
-Nov 13 15:54:18 debian8-p3 elasticsearch[29086]: at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:105)
-Nov 13 15:54:18 debian8-p3 elasticsearch[29086]: at org.elasticsearch.node.internal.InternalNode.<init>(InternalNode.java:160)
-Nov 13 15:54:18 debian8-p3 elasticsearch[29086]: ... 4 more
-Nov 13 15:54:18 debian8-p3 systemd[1]: [1;39melasticsearch.service: main process exited, code=exited, status=3/NOTIMPLEMENTED[0m
-Nov 13 15:54:18 debian8-p3 systemd[1]: [1;39mUnit elasticsearch.service entered failed state.[0m
+Nov 15 09:15:48 debian8-p3 elasticsearch[28625]: at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+Nov 15 09:15:48 debian8-p3 elasticsearch[28625]: at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:383)
+Nov 15 09:15:48 debian8-p3 elasticsearch[28625]: at java.nio.file.Files.createDirectory(Files.java:630)
+Nov 15 09:15:48 debian8-p3 elasticsearch[28625]: at java.nio.file.Files.createAndCheckIsDirectory(Files.java:734)
+Nov 15 09:15:48 debian8-p3 elasticsearch[28625]: at java.nio.file.Files.createDirectories(Files.java:720)
+Nov 15 09:15:48 debian8-p3 elasticsearch[28625]: at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:105)
+Nov 15 09:15:48 debian8-p3 elasticsearch[28625]: at org.elasticsearch.node.internal.InternalNode.<init>(InternalNode.java:160)
+Nov 15 09:15:48 debian8-p3 elasticsearch[28625]: ... 4 more
+Nov 15 09:15:48 debian8-p3 systemd[1]: [1;39melasticsearch.service: main process exited, code=exited, status=3/NOTIMPLEMENTED[0m
+Nov 15 09:15:48 debian8-p3 systemd[1]: [1;39mUnit elasticsearch.service entered failed state.[0m

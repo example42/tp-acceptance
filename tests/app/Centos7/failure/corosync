@@ -5,11 +5,11 @@ corosync-2.3.4-4.el7_1.3.x86_64
 Redirecting to /bin/systemctl status  corosync.service
 corosync.service - Corosync Cluster Engine
    Loaded: loaded (/usr/lib/systemd/system/corosync.service; disabled)
-   Active: [1;31mfailed[0m (Result: exit-code) since Fri 2015-11-13 14:58:12 UTC; 3s ago
-  Process: 15947 ExecStart=/usr/share/corosync/corosync start [1;31m(code=exited, status=1/FAILURE)[0m
+   Active: [1;31mfailed[0m (Result: exit-code) since Sun 2015-11-15 08:53:59 UTC; 3s ago
+  Process: 18763 ExecStart=/usr/share/corosync/corosync start [1;31m(code=exited, status=1/FAILURE)[0m
 
-Nov 13 14:58:12 centos7.example42.dev systemd[1]: Starting Corosync Cluster Engine...
-Nov 13 14:58:12 centos7.example42.dev corosync[15947]: Starting Corosync Cluster Engine (corosync): [FAILED]
-Nov 13 14:58:12 centos7.example42.dev systemd[1]: [1;39mcorosync.service: control process exited, code=exited status=1[0m
-Nov 13 14:58:12 centos7.example42.dev systemd[1]: [1;31mFailed to start Corosync Cluster Engine.[0m
-Nov 13 14:58:12 centos7.example42.dev systemd[1]: [1;39mUnit corosync.service entered failed state.[0m
+Nov 15 08:53:59 centos7.example42.dev systemd[1]: Starting Corosync Cluster Engine...
+Nov 15 08:53:59 centos7.example42.dev corosync[18763]: Starting Corosync Cluster Engine (corosync): [FAILED]
+Nov 15 08:53:59 centos7.example42.dev systemd[1]: [1;39mcorosync.service: control process exited, code=exited status=1[0m
+Nov 15 08:53:59 centos7.example42.dev systemd[1]: [1;31mFailed to start Corosync Cluster Engine.[0m
+Nov 15 08:53:59 centos7.example42.dev systemd[1]: [1;39mUnit corosync.service entered failed state.[0m

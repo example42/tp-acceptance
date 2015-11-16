@@ -1,1 +1,5 @@
-sudo: /etc/tp/test/monit: command not found
+# Package status
+package monit is not installed
+
+# Service status
+monit: unrecognized service

@@ -9,13 +9,13 @@ ii  munin-node                                   2.0.25-1                    all
 # Service status
 [1;32m●[0m munin-node.service - Munin Node
    Loaded: loaded (/lib/systemd/system/munin-node.service; enabled)
-   Active: [1;32mactive (running)[0m since Sun 2015-11-08 19:47:40 UTC; 2min 21s ago
+   Active: [1;32mactive (running)[0m since Sat 2015-11-14 14:49:53 UTC; 2min 39s ago
      Docs: man:munin-node(1)
            http://munin.readthedocs.org/en/stable-2.0/reference/munin-node.html
- Main PID: 11534 (munin-node)
+ Main PID: 31594 (munin-node)
    CGroup: /system.slice/munin-node.service
-           └─11534 /usr/bin/perl -wT /usr/sbin/munin-node
+           └─31594 /usr/bin/perl -wT /usr/sbin/munin-node
 
-Nov 08 19:47:40 debian8-p3 systemd[1]: PID file /run/munin/munin-node.pid not readable (yet?) after start.
-Nov 08 19:47:40 debian8-p3 systemd[1]: Started Munin Node.
-Nov 08 19:47:40 debian8-p3 systemd[1]: Started Munin Node.
+Nov 14 14:49:53 debian8-p3 systemd[1]: PID file /run/munin/munin-node.pid not readable (yet?) after start.
+Nov 14 14:49:53 debian8-p3 systemd[1]: Started Munin Node.
+Nov 14 14:49:54 debian8-p3 systemd[1]: Started Munin Node.

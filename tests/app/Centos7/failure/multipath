@@ -1,1 +1,12 @@
-sudo: /etc/tp/test/multipath: command not found
+# Package status
+device-mapper-multipath-0.4.9-77.el7_1.2.x86_64
+
+# Service status
+Redirecting to /bin/systemctl status  multipathd.service
+multipathd.service - Device-Mapper Multipath Device Controller
+   Loaded: loaded (/usr/lib/systemd/system/multipathd.service; enabled)
+   Active: inactive (dead)
+           start condition failed at Sat 2015-11-14 14:46:34 UTC; 3s ago
+           ConditionPathExists=/etc/multipath.conf was not met
+
+Nov 14 14:46:34 centos7.example42.dev systemd[1]: Started Device-Mapper Multipath Device Controller.

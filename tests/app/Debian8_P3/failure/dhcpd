@@ -2,23 +2,23 @@
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
 |/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
-||/ Name                                    Version                  Architecture             Description
-+++-=======================================-========================-========================-===================================================================================
-ii  isc-dhcp-server                         4.3.1-6                  amd64                    ISC DHCP server for automatic IP address assignment
+||/ Name                                         Version                     Architecture                Description
++++-============================================-===========================-===========================-==============================================================================================
+ii  isc-dhcp-server                              4.3.1-6                     amd64                       ISC DHCP server for automatic IP address assignment
 
 # Service status
 [1;31m●[0m isc-dhcp-server.service - LSB: DHCP server
    Loaded: loaded (/etc/init.d/isc-dhcp-server)
-   Active: [1;31mfailed[0m (Result: exit-code) since Fri 2015-11-13 15:06:39 UTC; 2s ago
-  Process: 21661 ExecStart=/etc/init.d/isc-dhcp-server start [1;31m(code=exited, status=1/FAILURE)[0m
+   Active: [1;31mfailed[0m (Result: exit-code) since Sun 2015-11-15 09:02:27 UTC; 2s ago
+  Process: 21264 ExecStart=/etc/init.d/isc-dhcp-server start [1;31m(code=exited, status=1/FAILURE)[0m
 
-Nov 13 15:06:37 debian8-p3 dhcpd[21668]: [1;31mbugs on either our web page at www.isc.org or in the README file[0m
-Nov 13 15:06:37 debian8-p3 dhcpd[21668]: [1;31mbefore submitting a bug.  These pages explain the proper[0m
-Nov 13 15:06:37 debian8-p3 dhcpd[21668]: [1;31mprocess and the information we find helpful for debugging..[0m
-Nov 13 15:06:37 debian8-p3 dhcpd[21668]: 
-Nov 13 15:06:37 debian8-p3 dhcpd[21668]: [1;31mexiting.[0m
-Nov 13 15:06:39 debian8-p3 isc-dhcp-server[21661]: Starting ISC DHCP server: dhcpdcheck syslog for diagnostics. ... failed!
-Nov 13 15:06:39 debian8-p3 isc-dhcp-server[21661]: failed!
-Nov 13 15:06:39 debian8-p3 systemd[1]: [1;39misc-dhcp-server.service: control process exited, code=exited status=1[0m
-Nov 13 15:06:39 debian8-p3 systemd[1]: [1;31mFailed to start LSB: DHCP server.[0m
-Nov 13 15:06:39 debian8-p3 systemd[1]: [1;39mUnit isc-dhcp-server.service entered failed state.[0m
+Nov 15 09:02:25 debian8-p3 dhcpd[21271]: 
+Nov 15 09:02:25 debian8-p3 dhcpd[21271]: [1;31mNot configured to listen on any interfaces![0m
+Nov 15 09:02:25 debian8-p3 dhcpd[21271]: 
+Nov 15 09:02:25 debian8-p3 dhcpd[21271]: [1;31mIf you think you have received this message due to a bug rather[0m
+Nov 15 09:02:25 debian8-p3 dhcpd[21271]: [1;31mthan a configuration issue please read the section on submitting[0m
+Nov 15 09:02:27 debian8-p3 isc-dhcp-server[21264]: Starting ISC DHCP server: dhcpdcheck syslog for diagnostics. ... failed!
+Nov 15 09:02:27 debian8-p3 isc-dhcp-server[21264]: failed!
+Nov 15 09:02:27 debian8-p3 systemd[1]: [1;39misc-dhcp-server.service: control process exited, code=exited status=1[0m
+Nov 15 09:02:27 debian8-p3 systemd[1]: [1;31mFailed to start LSB: DHCP server.[0m
+Nov 15 09:02:27 debian8-p3 systemd[1]: [1;39mUnit isc-dhcp-server.service entered failed state.[0m

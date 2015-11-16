@@ -2,24 +2,25 @@
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
 |/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
-||/ Name                                    Version                  Architecture             Description
-+++-=======================================-========================-========================-===================================================================================
-ii  dnsmasq                                 2.72-3+deb8u1            all                      Small caching DNS proxy and DHCP/TFTP server
+||/ Name                                         Version                     Architecture                Description
++++-============================================-===========================-===========================-==============================================================================================
+ii  dnsmasq                                      2.72-3+deb8u1               all                         Small caching DNS proxy and DHCP/TFTP server
 
 # Service status
 [1;32m●[0m dnsmasq.service - dnsmasq - A lightweight DHCP and caching DNS server
    Loaded: loaded (/lib/systemd/system/dnsmasq.service; enabled)
   Drop-In: /run/systemd/generator/dnsmasq.service.d
            └─50-dnsmasq-$named.conf, 50-insserv.conf-$named.conf
-   Active: [1;32mactive (running)[0m since Fri 2015-11-13 15:09:09 UTC; 2s ago
- Main PID: 22745 (dnsmasq)
+   Active: [1;32mactive (running)[0m since Sun 2015-11-15 09:05:03 UTC; 3s ago
+ Main PID: 22344 (dnsmasq)
    CGroup: /system.slice/dnsmasq.service
-           └─22745 /usr/sbin/dnsmasq -x /var/run/dnsmasq/dnsmasq.pid -u dnsmasq -r /var/run/dnsmasq/resolv.conf -7 /etc/dnsmasq.d,.dpkg-dist,.dpkg-old,.dpkg-new --local-service -...
+           └─22344 /usr/sbin/dnsmasq -x /var/run/dnsmasq/dnsmasq.pid -u dnsmasq -r /var/run/dnsmasq/resolv.conf -7 /etc/dnsmasq.d,.dpkg-dist,.dpkg-old,.dpkg-new --local-service --trust-anchor=.,19036,...
 
-Nov 13 15:09:09 debian8-p3 dnsmasq[22736]: dnsmasq: syntax check OK.
-Nov 13 15:09:09 debian8-p3 dnsmasq[22745]: started, version 2.72 cachesize 150
-Nov 13 15:09:09 debian8-p3 dnsmasq[22745]: compile time options: IPv6 GNU-getopt DBus i18n IDN DHCP DHCPv6 no-Lua TFTP conntrack ipset auth DNSSEC loop-detect
-Nov 13 15:09:09 debian8-p3 dnsmasq[22745]: DNS service limited to local subnets
-Nov 13 15:09:09 debian8-p3 dnsmasq[22745]: [1;39mfailed to access /var/run/dnsmasq/resolv.conf: No such file or directory[0m
-Nov 13 15:09:09 debian8-p3 dnsmasq[22745]: read /etc/hosts - 2 addresses
-Nov 13 15:09:09 debian8-p3 systemd[1]: Started dnsmasq - A lightweight DHCP and caching DNS server.
+Nov 15 09:05:03 debian8-p3 systemd[1]: Starting dnsmasq - A lightweight DHCP and caching DNS server...
+Nov 15 09:05:03 debian8-p3 dnsmasq[22334]: dnsmasq: syntax check OK.
+Nov 15 09:05:03 debian8-p3 dnsmasq[22344]: started, version 2.72 cachesize 150
+Nov 15 09:05:03 debian8-p3 dnsmasq[22344]: compile time options: IPv6 GNU-getopt DBus i18n IDN DHCP DHCPv6 no-Lua TFTP conntrack ipset auth DNSSEC loop-detect
+Nov 15 09:05:03 debian8-p3 dnsmasq[22344]: DNS service limited to local subnets
+Nov 15 09:05:03 debian8-p3 dnsmasq[22344]: [1;39mfailed to access /var/run/dnsmasq/resolv.conf: No such file or directory[0m
+Nov 15 09:05:03 debian8-p3 dnsmasq[22344]: read /etc/hosts - 2 addresses
+Nov 15 09:05:03 debian8-p3 systemd[1]: Started dnsmasq - A lightweight DHCP and caching DNS server.

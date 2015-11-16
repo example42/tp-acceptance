@@ -1,0 +1,13 @@
+# Package status
+memcached-1.4.15-9.el7.x86_64
+
+# Service status
+Redirecting to /bin/systemctl status  memcached.service
+memcached.service - Memcached
+   Loaded: loaded (/usr/lib/systemd/system/memcached.service; enabled)
+   Active: [1;32mactive (running)[0m since Sat 2015-11-14 14:36:08 UTC; 3s ago
+ Main PID: 26393 (memcached)
+   CGroup: /system.slice/memcached.service
+           └─26393 /usr/bin/memcached -u memcached -p 11211 -m 64 -c 1024
+
+Nov 14 14:36:08 centos7.example42.dev systemd[1]: Started Memcached.

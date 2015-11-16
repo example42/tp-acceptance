@@ -1,1 +1,9 @@
-sudo: /etc/tp/test/nagios: command not found
+# Package status
+package nagios is not installed
+
+# Service status
+Redirecting to /bin/systemctl status  nagios.service
+nagios.service
+   Loaded: not-found (Reason: No such file or directory)
+   Active: inactive (dead)
+
