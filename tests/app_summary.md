@@ -1,5 +1,6 @@
 # Tiny Puppet - APP acceptance tests compatibility matrix
-### Generated: Fri Nov 13 23:26:30 CET 2015
+### Generated: Mon Nov 16 10:50:07 CET 2015
+**NOTE** - Many failures don't imply lack of tp support for an application: in many cases services don't start because they are not configured by default. Check the *failure* link for more info
 APP             |  OK  |  KO  |  N/A  |  Centos6                                        |  Centos7                                        |  Debian6                                       |  Debian7                                        |  Debian8_P3                                       |  Ubuntu1204                                        |  Ubuntu1404                                      
 ----------------|------|------|-------|-------------------------------------------------|-------------------------------------------------|------------------------------------------------|-------------------------------------------------|---------------------------------------------------|----------------------------------------------------|--------------------------------------------------
 activemq        |  4   |  3   |  0    |  [failure](app/Centos6/failure/activemq)        |  [failure](app/Centos7/failure/activemq)        |  [failure](app/Debian6/failure/activemq)       |  [OK](app/Debian7/success/activemq)             |  [OK](app/Debian8_P3/success/activemq)            |  [OK](app/Ubuntu1204/success/activemq)             |  [OK](app/Ubuntu1404/success/activemq)           
