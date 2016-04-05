@@ -61,13 +61,13 @@ Vagrant.configure("2") do |config|
       local.vm.provider "virtualbox" do |v|
         v.customize [ 'modifyvm', :id, '--memory', memory.to_s ]
         v.customize [ 'modifyvm', :id, '--cpus', cpu.to_s ]
-        # v.customize [ 'setextradata', :id, 'VBoxInternal2/SharedFoldersEnableSymlinksCreate/v-root', '1']
       end
       local.vm.box = cfg[:box]
       local.vm.box_url = cfg[:box_url] if cfg[:box_url]
 #      local.vm.boot_mode = :gui
       local.vm.host_name = ENV['VAGRANT_HOSTNAME'] || name.to_s.downcase.gsub(/_/, '-').concat(".example42.dev")
       local.vm.provision "shell", path: 'bin/vagrant-setup.sh', args: cfg[:breed]
+      local.vm.synced_folder ".", "/vagrant", type: "rsync", rsync__exclude: ".git/"
 
 # TODO Fix
       $facter_script = <<EOF
